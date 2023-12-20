@@ -1,15 +1,13 @@
-import { ProfileOutlined } from "@ant-design/icons";
-import { Progress } from "antd";
 import Skills from "../component/skills";
-
+import { ProfileOutlined } from "../component/antd";
 const Resume = () => {
   return (
     <div className="m-12">
       <div className="flex justify-between align-bottom  text-2xl border-b-4 border-dotted border-green-400 mb-4">
         <h1>My Resume</h1>
-        <p>
+        <>
           <ProfileOutlined />
-        </p>
+        </>
       </div>
       <div className="grid grid-cols-2 gap-4 p-4">
         <div className="col-span-1">
