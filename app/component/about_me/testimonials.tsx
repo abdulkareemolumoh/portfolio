@@ -39,8 +39,8 @@ const Testimonials = () => {
         <Image
           src={testimony.image}
           alt={testimony.name}
-          width={100}
-          height={100}
+          width={75}
+          height={75}
           style={{
             width: "auto",
             height: "auto",

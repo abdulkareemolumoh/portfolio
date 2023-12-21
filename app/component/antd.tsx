@@ -6,8 +6,15 @@ import {
   EyeOutlined,
   LaptopOutlined,
   MobileOutlined,
+  PhoneOutlined,
+  ContactsOutlined,
+  MailOutlined,
+  SendOutlined,
+  DownloadOutlined,
+  EnvironmentOutlined,
 } from "@ant-design/icons";
 import { Progress, Carousel } from "antd";
+import { Typewriter } from "react-simple-typewriter";
 
 export {
   ProfileOutlined,
@@ -18,4 +25,11 @@ export {
   EyeOutlined,
   LaptopOutlined,
   MobileOutlined,
+  PhoneOutlined,
+  Typewriter,
+  ContactsOutlined,
+  MailOutlined,
+  SendOutlined,
+  DownloadOutlined,
+  EnvironmentOutlined,
 };

@@ -5,8 +5,8 @@ import Image from "next/image";
 const Portfolio = () => {
   return (
     <div>
-      <div className="m-12">
-        <div className="flex justify-between align-bottom  text-2xl border-b-4 border-dotted border-green-400 mb-4">
+      <div className="m-12 ">
+        <div className="flex justify-between items-baseline font-bold text-3xl border-b-4 border-dotted border-green-400 mb-4">
           <h1>Portfolio</h1>
           <p>
             <DatabaseOutlined />
@@ -24,7 +24,7 @@ const Portfolio = () => {
             <h1 className="m-4 font-semibold text-center">Tenzies</h1>
             <button className="py-2 px-4 border rounded-xl border-green-500 flex mx-auto">
               <a href="https://tenziiesgame.netlify.app/" target="_blank">
-                View the site
+                View site
               </a>
             </button>
           </div>
@@ -40,7 +40,7 @@ const Portfolio = () => {
 
             <button className="py-2 px-4 border rounded-xl border-green-500 flex mx-auto">
               <a href="https://quizzcalapp.netlify.app/" target="_blank">
-                View the site
+                View site
               </a>
             </button>
           </div>
@@ -55,7 +55,7 @@ const Portfolio = () => {
             <h1 className="m-4 font-semibold text-center">VanLife</h1>
             <button className="py-2 px-4 border rounded-xl border-green-500 flex mx-auto">
               <a href="https://vanslifeapp.netlify.app/" target="_blank">
-                View the site
+                View site
               </a>
             </button>
           </div>
@@ -71,7 +71,7 @@ const Portfolio = () => {
 
             <button className="py-2 px-4 border rounded-xl border-green-500 flex mx-auto">
               <a href="https://trendecho.netlify.app/" target="_blank">
-                View the site
+                View site
               </a>
             </button>
           </div>

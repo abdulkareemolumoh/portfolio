@@ -49,10 +49,10 @@ const Navbar = () => {
               PORTFOLIO
             </li>
           </Link>
-          <li className="px-12 py-4 text-xl font-semibold border-b-2  flex align-bottom gap-2">
+          {/* <li className="px-12 py-4 text-xl font-semibold border-b-2  flex align-bottom gap-2">
             <BookOutlined />
             BLOG
-          </li>
+          </li> */}
           <Link href={"/contact"}>
             <li className="px-12 py-4 text-xl font-semibold border-b-2  flex align-bottom gap-2">
               <ContactsOutlined />
