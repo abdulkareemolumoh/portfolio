@@ -1,5 +1,21 @@
 "use client";
-import { ProfileOutlined } from "@ant-design/icons";
-import { Progress } from "antd";
+import {
+  ProfileOutlined,
+  UserOutlined,
+  CommentOutlined,
+  EyeOutlined,
+  LaptopOutlined,
+  MobileOutlined,
+} from "@ant-design/icons";
+import { Progress, Carousel } from "antd";
 
-export { ProfileOutlined, Progress };
+export {
+  ProfileOutlined,
+  Progress,
+  UserOutlined,
+  CommentOutlined,
+  Carousel,
+  EyeOutlined,
+  LaptopOutlined,
+  MobileOutlined,
+};

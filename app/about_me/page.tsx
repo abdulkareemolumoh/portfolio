@@ -1,16 +1,13 @@
-import { UserOutlined } from "@ant-design/icons";
+import { UserOutlined } from "../component/antd";
 import Image from "next/image";
-import Services from "./services";
-import Tesimonials from "./testimonials";
+import { Services, Testimonials } from "../component/about_me";
 
 const About = () => {
   return (
     <div className="m-12 ">
       <div className="flex justify-between align-bottom  text-2xl border-b-4 border-dotted border-green-400 mb-4">
         <h1>About Me</h1>
-        <>
-          <UserOutlined />
-        </>
+        <UserOutlined />
       </div>
       <div className="grid grid-cols-8 gap-16">
         <div className="col-span-5 ">
@@ -29,15 +26,17 @@ const About = () => {
             officia deleniti accusamus obcaecati dolores. Porro culpa quibusdam
             impedit porro praesentium excepturi. Alias ab consequatur?
           </p>
-          <>
-            <Image
-              src={"/signature.png"}
-              width={350}
-              height={200}
-              alt="sign"
-              className="flex mx-auto"
-            />
-          </>
+          <Image
+            src={"/images/signature.png"}
+            width={350}
+            height={350}
+            style={{
+              width: "auto",
+              height: "auto",
+            }}
+            alt="sign"
+            className="flex mx-auto"
+          />
         </div>
         <div className="col-span-3">
           <h3 className="my-4 font-bold text-2xl">Personal Information</h3>
@@ -54,16 +53,10 @@ const About = () => {
           </button>
         </div>
       </div>
-      <>
-        <Services />
-        <Tesimonials />
-      </>
+      <Services />
+      <Testimonials />
     </div>
   );
 };
 
 export default About;
-// export async function getStaticProps({ params: {slug} }) {
-//   // ↓add
-//   console.log(`Building slug: ${slug}`)
-// }

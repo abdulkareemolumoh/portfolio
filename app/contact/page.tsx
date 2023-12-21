@@ -11,7 +11,7 @@ const Contact = () => {
       </div>
       <div className="grid grid-cols-2 gap-4 m-12">
         <div className="p-4 border-4 rounded-xl max-w-fit m-4 shadow-xl ">
-          <MailOutlined className="text-9xl" />
+          <MailOutlined className="text-[16rem]" />
           <h1 className="m-4 font-semibold text-center">Tenzies</h1>
           <button className="py-2 px-4 border rounded-xl border-green-500 flex mx-auto">
             <a href="mailto:tundeolumoh@gmail.com" target="_blank">

@@ -1,5 +1,5 @@
 import React from "react";
-import { Progress } from "../component/antd";
+import { Progress } from "../antd";
 
 interface SkillProps {
   label: string;

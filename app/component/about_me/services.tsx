@@ -1,4 +1,4 @@
-import { EyeOutlined, LaptopOutlined, MobileOutlined } from "@ant-design/icons";
+import { EyeOutlined, LaptopOutlined, MobileOutlined } from "../antd";
 
 const Services = () => {
   return (

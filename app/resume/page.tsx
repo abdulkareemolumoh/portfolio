@@ -1,5 +1,6 @@
-import Skills from "../component/skills";
+import { Skills } from "../component/resume";
 import { ProfileOutlined } from "../component/antd";
+
 const Resume = () => {
   return (
     <div className="m-12">

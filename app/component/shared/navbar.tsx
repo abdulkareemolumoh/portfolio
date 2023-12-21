@@ -17,7 +17,7 @@ const Navbar = () => {
     <div className="bg-green-400 flex flex-col justify-between min-h-screen  ">
       <div>
         <Image
-          src={"/picture.jpg"}
+          src={"/images/picture.jpg"}
           width={300}
           height={300}
           alt="profile_img"
