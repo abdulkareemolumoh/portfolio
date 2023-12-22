@@ -32,8 +32,8 @@ const Testimonials = () => {
 
   const testimonys = testimonial.map((testimony, index) => (
     <div key={index} className="">
-      <p className="bg-green-100 rounded-tl-3xl rounded-br-3xl  p-12 flex gap-8 items-center ">
-        <CommentOutlined className="text-6xl" /> {testimony.testimony}
+      <p className="bg-green-100 rounded-tl-3xl rounded-br-3xl  p-4 lg:p12 flex gap-8 items-center ">
+        <CommentOutlined className="text-3xl lg:text-6xl" /> {testimony.testimony}
       </p>
       <div className="m-4 flex gap-4">
         <Image
@@ -59,13 +59,13 @@ const Testimonials = () => {
     <div className="p-8">
       <Carousel effect="fade" autoplay>
         <div>
-          <div className="grid grid-cols-2 gap-4">
+          <div className="flex flex-col gap-0 lg:grid grid-cols-2 lg:gap-4">
             <div className="col-span-1"> {testimonys[0]}</div>
             <div className="col-span-1"> {testimonys[1]}</div>
           </div>
         </div>
         <div>
-          <div className="grid grid-cols-2 gap-4">
+          <div className="flex flex-col gap-0 lg:grid grid-cols-2 lg:gap-4">
             <div className="col-span-1"> {testimonys[2]}</div>
           </div>
         </div>

@@ -13,9 +13,9 @@ import {
 
 const Navbar = () => {
   return (
-    <div className="bg-green-400 flex flex-col justify-between h-screen">
+    <div className="bg-green-400 flex flex-col justify-between h-screen ">
       <div>
-        <div >
+        <div>
           <Image
             src={"/images/picture.jpg"}
             width={600}
@@ -27,7 +27,7 @@ const Navbar = () => {
             alt="profile_img"
           />
         </div>
-        <div className="flex flex-col flex-wrap">
+        <div className="flex flex-col items-center">
           <ul>
             <Link href={"/"}>
               <li className="px-12 py-4 text-xl font-semibold border-b-2 flex align-bottom gap-2">

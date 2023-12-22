@@ -19,14 +19,14 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={inter.className}>
-        <div className="block md:hidden w-full">
+        <div className="block sm:hidden w-full">
           <TopNavbar />
         </div>
         <div className="grid grid-cols-12 ">
-          <div className="col-span-2 md:col-span-3 hidden sm:block ">
+          <div className="hidden sm:block sm:col-span-3">
             <Navbar />
           </div>
-          <div className="col-span-10 md:col-span-9  h-screen overflow-auto ">
+          <div className="col-span-full sm:col-span-9 h-screen overflow-auto ">
             <StyledComponentsRegistry>{children}</StyledComponentsRegistry>
           </div>
         </div>

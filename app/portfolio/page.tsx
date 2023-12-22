@@ -15,7 +15,7 @@ const Portfolio = () => {
         <div className="grid grid-cols-2 gap-4 m-12">
           <div className="p-4 border-4 rounded-xl max-w-fit m-4 shadow-xl ">
             <Image
-              src={"/Tenzies.jpg"}
+              src={"/images/Tenzies.jpg"}
               alt="tenzies"
               width={500}
               height={500}
@@ -30,7 +30,7 @@ const Portfolio = () => {
           </div>
           <div className="p-4 border-4 rounded-xl max-w-fit m-4 shadow-xl">
             <Image
-              src={"/quizzcal.jpg"}
+              src={"/images/quizzcal.jpg"}
               alt="tenzies"
               width={500}
               height={500}
@@ -46,7 +46,7 @@ const Portfolio = () => {
           </div>
           <div className="p-4 border-4 rounded-xl max-w-fit m-4 shadow-xl">
             <Image
-              src={"/VanLife.jpg"}
+              src={"/images/VanLife.jpg"}
               alt="tenzies"
               width={500}
               height={500}
@@ -61,7 +61,7 @@ const Portfolio = () => {
           </div>
           <div className="p-4 border-4 rounded-xl max-w-fit m-4 shadow-xl">
             <Image
-              src={"/trendecho.jpg"}
+              src={"/images/trendecho.jpg"}
               alt="tenzies"
               width={500}
               height={500}

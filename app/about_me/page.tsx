@@ -9,7 +9,7 @@ const About = () => {
         <h1>About Me</h1>
         <UserOutlined />
       </div>
-      <div className="grid grid-cols-8 gap-16">
+      <div className="flex flex-col lg:grid grid-cols-8 gap-4 lg:gap-8 ">
         <div className="col-span-5 text-justify ">
           <h1 className="my-4 font-bold text-2xl">Frontend Developer</h1>
           <p className="text-xl  p-2">
@@ -110,12 +110,12 @@ const About = () => {
               <span className="font-semibold">Freelance: </span> Available
             </li>
           </ul>
-          <button className="border-4 text-green-500 font-extrabold text-xl border-green-500 p-4 mt-4 gap-2 flex items-baseline ">
-            <a href="/resume/Resume.pdf" download="Resume.pdf" target="_blank">
+          <a href="/resume/Resume.pdf" download="Resume.pdf" target="_blank">
+            <button className="border-4 text-green-500 font-extrabold text-lg lg:text-xl border-green-500 p-2 lg:p-4 mt-4 gap-2 flex items-baseline ">
               DOWNLOAD RESUME
-            </a>
-            <DownloadOutlined />
-          </button>
+              <DownloadOutlined />
+            </button>
+          </a>
         </div>
       </div>
       <Services />

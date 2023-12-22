@@ -3,10 +3,10 @@ import { EyeOutlined, LaptopOutlined, MobileOutlined } from "../antd";
 const Services = () => {
   return (
     <div>
-      <h1 className="text-center text-3xl font-bold underline mb-8">
+      <h1 className="text-center text-3xl font-bold underline my-8">
         SERVICES
       </h1>
-      <div className="flex justify-evenly text-center  m-2 ">
+      <div className="flex justify-evenly text-center m-2 gap-8 ">
         <div>
           <LaptopOutlined className="text-6xl" />
           <h1 className="text-xl font-semibold my-4">Web Development</h1>
