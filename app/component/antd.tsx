@@ -12,24 +12,34 @@ import {
   SendOutlined,
   DownloadOutlined,
   EnvironmentOutlined,
+  DatabaseOutlined,
+  GithubOutlined,
+  HomeOutlined,
+  TwitterOutlined,
+  MenuOutlined,
 } from "@ant-design/icons";
 import { Progress, Carousel } from "antd";
 import { Typewriter } from "react-simple-typewriter";
 
 export {
-  ProfileOutlined,
+  Typewriter,
   Progress,
+  Carousel,
+  ProfileOutlined,
   UserOutlined,
   CommentOutlined,
-  Carousel,
   EyeOutlined,
   LaptopOutlined,
   MobileOutlined,
   PhoneOutlined,
-  Typewriter,
   ContactsOutlined,
   MailOutlined,
   SendOutlined,
   DownloadOutlined,
   EnvironmentOutlined,
+  DatabaseOutlined,
+  GithubOutlined,
+  HomeOutlined,
+  TwitterOutlined,
+  MenuOutlined,
 };
