@@ -15,8 +15,8 @@ const Contact = () => {
           <ContactsOutlined />
         </p>
       </div>
-      <div className="grid grid-cols-3 m-12">
-        <div className="p-4 border-4 rounded-xl max-w-fit m-4 shadow-xl hover:scale-110 ">
+      <div className="flex flex-col lg:grid grid-cols-2 gap-4 m-4 lg:m-12">
+        <div className="p-4 border-4 rounded-xl max-w-fit m-4 shadow-xl hover:scale-110 mx-auto">
           <MailOutlined className="text-[16rem]" />
           <h1 className="m-4 font-semibold text-center">
             tundeolumoh@gmail.com
@@ -28,14 +28,14 @@ const Contact = () => {
             </a>
           </button>
         </div>
-        <div className="p-4 border-4 rounded-xl max-w-fit m-4 shadow-xl hover:scale-110 ">
+        <div className="p-4 border-4 rounded-xl max-w-fit m-4 shadow-xl hover:scale-110 mx-auto">
           <PhoneOutlined className="text-[16rem]" />
           <h1 className="m-4 font-semibold text-center">+234 80 913 81136</h1>
           <button className="py-2 px-4 border rounded-xl border-green-500 flex mx-auto items-center gap-2">
             <PhoneOutlined /> <a href="tel:+2348091381136">Phone</a>
           </button>
         </div>
-        <div className="p-4 border-4 rounded-xl max-w-fit m-4 shadow-xl hover:scale-110 ">
+        <div className="p-4 border-4 rounded-xl max-w-fit m-4 shadow-xl hover:scale-110 mx-auto">
           <EnvironmentOutlined className="text-[16rem]" />
           <h1 className="m-4 font-semibold text-center">
             Ilorin, Kwara State, Nigeria
