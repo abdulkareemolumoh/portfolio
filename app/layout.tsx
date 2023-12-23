@@ -23,10 +23,10 @@ export default function RootLayout({
           <TopNavbar />
         </div>
         <div className="grid grid-cols-12 ">
-          <div className={`hidden sm:block sm:col-span-3`}>
+          <div className={`hidden sm:block sm:col-span-2`}>
             <Navbar />
           </div>
-          <div className="col-span-full sm:col-span-9 h-screen overflow-auto ">
+          <div className="col-span-full sm:col-span-10 h-screen overflow-auto ">
             <StyledComponentsRegistry>{children}</StyledComponentsRegistry>
           </div>
         </div>
