@@ -8,14 +8,14 @@ interface SkillProps {
 
 const Skills: React.FC<SkillProps> = ({ label, percent }) => {
   return (
-    <div className="grid grid-cols-5 mb-4">
-      <div className="col-span-1">
+    <div className="grid grid-cols-12 mb-2 w-screen">
+      <div className="col-span-3">
         <h1>{label}:</h1>
       </div>
-      <div className="col-span-4">
+      <div className="col-span-9 ">
         <Progress
           percent={percent}
-          size={[700, 20]}
+          size={[250, 30]}
           status="active"
           strokeColor="green"
         />

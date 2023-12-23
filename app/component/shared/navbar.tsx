@@ -13,7 +13,7 @@ import {
 
 const Navbar = () => {
   return (
-    <div className="bg-green-400 flex flex-col justify-between h-screen ">
+    <div className="bg-green-400 flex flex-col justify-between h-screen w-1/2 sm:w-full fixed sm:static ">
       <div>
         <div>
           <Image
@@ -22,34 +22,34 @@ const Navbar = () => {
             height={600}
             style={{
               width: "auto",
-              height: "25rem",
+              height: "auto",
             }}
             alt="profile_img"
           />
         </div>
-        <div className="flex flex-col items-center">
+        <div className="flex flex-col ">
           <ul>
             <Link href={"/"}>
-              <li className="px-12 py-4 text-xl font-semibold border-b-2 flex align-bottom gap-2">
+              <li className="px-8 py-4 text-xs  font-semibold border-b-2 flex align-bottom gap-2 ">
                 <HomeOutlined />
                 HOME
               </li>
             </Link>
 
             <Link href={"/about_me"}>
-              <li className="px-12 py-4 text-xl font-semibold border-b-2  flex align-bottom gap-2">
+              <li className="px-8 py-4 text-xs font-semibold border-b-2  flex align-bottom gap-2 ">
                 <UserOutlined />
                 ABOUT ME
               </li>
             </Link>
             <Link href={"/resume"}>
-              <li className="px-12 py-4 text-xl font-semibold border-b-2  flex align-bottom gap-2">
+              <li className="px-8 py-4 text-xs font-semibold border-b-2  flex align-bottom gap-2 ">
                 <ProfileOutlined />
                 RESUME
               </li>
             </Link>
             <Link href={"/portfolio"}>
-              <li className="px-12 py-4 text-xl font-semibold border-b-2  flex align-bottom gap-2">
+              <li className="px-8 py-4 text-xs font-semibold border-b-2  flex align-bottom gap-2 ">
                 <DatabaseOutlined />
                 PORTFOLIO
               </li>
@@ -59,7 +59,7 @@ const Navbar = () => {
             BLOG
           </li> */}
             <Link href={"/contact"}>
-              <li className="px-12 py-4 text-xl font-semibold border-b-2  flex align-bottom gap-2">
+              <li className="px-8 py-4 text-xs font-semibold border-b-2  flex align-bottom gap-2 ">
                 <ContactsOutlined />
                 CONTACT
               </li>
