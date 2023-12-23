@@ -21,24 +21,23 @@ const About = () => {
           </p>
           <h1 className="my-4 font-bold text-2xl">Expertise</h1>
           <p className="text-xl p-2 ">
-            <span className="font-semibold">Dolor Reprehenderit:</span> My
-            development journey has been marked by a relentless pursuit of
-            excellence. I specialize in crafting seamless and visually stunning
-            websites that captivate users from the first click.
+            <span className="font-semibold">Design-Driven Focus:</span>{" "}
+            Throughout my development journey, I&apos;ve been committed to
+            achieving excellence. I specialize in creating seamless and visually
+            captivating websites that engage users right from the initial click.
           </p>
           <p className="text-xl p-2">
-            <span className="font-semibold">User-Centric Design:</span> I
-            believe in the power of user-centric design. Each line of code I
-            write is geared towards enhancing the user experience. From
-            intuitive navigation to eye-catching visuals, I strive to make every
-            interaction memorable.
+            <span className="font-semibold">User-Centric Design:</span> I firmly
+            believe in the power of user-centric design. Every line of code I
+            write is aimed at enhancing the user experience, from ensuring
+            intuitive navigation to creating visually appealing designs that
+            make every interaction memorable.
           </p>
           <p className="text-xl p-2">
-            <span className="font-semibold">Innovative Solutions:</span>{" "}
-            Consequatur dolor nisi labore commodi ipsa? My approach to
-            problem-solving is rooted in innovation. I tackle challenges
-            head-on, exploring creative solutions to deliver results that go
-            beyond expectations.
+            <span className="font-semibold">Innovative Problem-Solving:</span>{" "}
+            My approach to problem-solving is grounded in innovation. I tackle
+            challenges head-on, exploring creative solutions to deliver results
+            that consistently exceed expectations.
           </p>
           <h1 className="my-4 font-bold text-2xl">Technical Proficiency</h1>
           <p className="text-xl p-2">
@@ -50,18 +49,17 @@ const About = () => {
           </p>
           <p className="text-xl p-2">
             <span className="font-semibold"> Frameworks:</span> I have a strong
-            command of frontend frameworks, with a particular focus on React.js.
-            This enables me to develop dynamic and scalable applications that
-            meet the demands of modern web development.
+            command of frontend frameworks, with focus on TypeScript, Bootstrap,
+            React, Next.js and Tailwindcss. This enables me to develop dynamic
+            and scalable applications that meet the demands of modern web
+            development.
           </p>
           <h1 className="my-4 font-bold text-2xl">Commitment to Quality</h1>
           <p className="text-xl p-2">
-            <span className="font-semibold">Attention to Detail:</span>
-            Excepturi velit laboriosam at voluptatibus cupiditate est vel.
-            Attention to detail is at the core of my work. Whether it&apos;s
-            refining the layout, fine-tuning the responsiveness, or optimizing
-            performance, I ensure every detail contributes to a polished final
-            product.
+            <span className="font-semibold">Attention to Detail:</span>{" "}
+            Attention to detail is the cornerstone of my work. Whether refining
+            layouts, fine-tuning responsiveness, or optimizing performance, I
+            ensure that every detail contributes to a polished final product.
           </p>
           <p className="text-xl p-2">
             <span className="font-semibold">Continuous Growth:</span> I embrace
@@ -103,15 +101,15 @@ const About = () => {
               tundeolumoh@gmail.com
             </li>
             <li className="my-4 grid grid-cols-2">
-              <span className="font-semibold">Phone: </span> (+234) 809 113
-              81136
+              <span className="font-semibold">Phone: </span>{" "}
+              (+234)-809-113-81136
             </li>
             <li className="my-4 grid grid-cols-2">
-              <span className="font-semibold">Freelance: </span> Available
+              <span className="font-semibold">Open to work: </span> Available
             </li>
           </ul>
-          <a href="/resume/Resume.pdf" download="Resume.pdf" target="_blank">
-            <button className="border-4 text-green-500 font-extrabold text-lg lg:text-xl border-green-500 p-2 lg:p-4 mt-4 gap-2 flex items-baseline ">
+          <a href="/resume/Resume.pdf" download="Tunde_Olumoh.pdf" target="_blank">
+            <button className="border-4 text-green-500 font-extrabold text-lg lg:text-xl border-green-500 p-2 lg:p-4 mt-4 gap-2 flex items-baseline hover:bg-green-300">
               DOWNLOAD RESUME
               <DownloadOutlined />
             </button>

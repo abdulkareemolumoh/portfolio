@@ -15,7 +15,7 @@ const Resume = () => {
           <h1 className="text-center text-3xl font-bold underline m-4">
             Projects
           </h1>
-          <div className="border-l-4 border-green-400 p-4 m-4 lg:p-8 lg:m-8">
+          <div className="border-l-4 border-green-400 text-justify p-4 m-4 lg:p-8 lg:m-8">
             <h1 className="text-xl font-semibold mb-4">Tenzies</h1>
             <h2>
               Tenzies app, a dynamic project developed using React, with a
@@ -27,7 +27,7 @@ const Resume = () => {
               luck and lightning-fast reflexes.
             </h2>
           </div>
-          <div className="border-l-4 border-green-400 p-4 m-4 lg:p-8 lg:m-8">
+          <div className="border-l-4 border-green-400 text-justify p-4 m-4 lg:p-8 lg:m-8">
             <h1 className="text-xl font-semibold mb-4">Quizzical</h1>
             <h2>
               Quizzical is an application skillfully crafted with React,
@@ -40,7 +40,7 @@ const Resume = () => {
               Quizzical transforms education into an enjoyable journey.
             </h2>
           </div>
-          <div className="border-l-4 border-green-400 p-4 m-4 lg:p-8 lg:m-8">
+          <div className="border-l-4 border-green-400 text-justify p-4 m-4 lg:p-8 lg:m-8">
             <h1 className="text-xl font-semibold mb-4">VanLife</h1>
             <h2>
               VanLife is a user-friendly application developed using React and
@@ -52,7 +52,7 @@ const Resume = () => {
               for a sleek and responsive design.
             </h2>
           </div>
-          <div className="border-l-4 border-green-400 p-4 m-4 lg:p-8 lg:m-8">
+          <div className="border-l-4 border-green-400 text-justify p-4 m-4 lg:p-8 lg:m-8">
             <h1 className="text-xl font-semibold mb-4">TrendEcho</h1>
             <h2>
               TrendEcho is a cutting-edge application crafted with Next.js and
@@ -157,9 +157,10 @@ const Resume = () => {
         <Skills label="HTML" percent={95} />
         <Skills label="CSS" percent={95} />
         <Skills label="JavaScript" percent={85} />
-        <Skills label="TypeScript" percent={80} />
         <Skills label="React" percent={88} />
+        <Skills label="Firebase" percent={92} />
         <Skills label="Next.js" percent={75} />
+        <Skills label="TypeScript" percent={80} />
         <Skills label="Github" percent={90} />
       </div>
     </div>
