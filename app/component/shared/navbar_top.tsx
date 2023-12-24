@@ -11,7 +11,7 @@ const TopNavbar = () => {
   }
   return (
     <div>
-      <div className="flex justify-between items-center bg-black text-green-500 px-6 py-4 font-bold ">
+      <div className="flex justify-between items-center bg-black text-green-500 px-6 py-4 font-bold sticky">
         <h1>TUNDE ABDULKAREEM OLUMOH</h1>
         <button onClick={toggleSwitch}>
           <MenuOutlined />

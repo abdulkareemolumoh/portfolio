@@ -8,7 +8,7 @@ import {
 
 const Contact = () => {
   return (
-    <div className="m-12 ">
+    <div className="m-4 sm:m-8 ">
       <div className="flex justify-between items-baseline font-bold text-3xl border-b-4 border-dotted text-green-500 border-green-500 mb-4">
         <h1>Contact Me</h1>
         <p>
