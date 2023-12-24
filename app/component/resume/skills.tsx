@@ -17,7 +17,7 @@ const Skills: React.FC<SkillProps> = ({ label, percent }) => {
           percent={percent}
           size={[250, 30]}
           status="active"
-          strokeColor="green"
+          strokeColor="rgb(34 197 94)"
         />
       </div>
     </div>

@@ -5,7 +5,7 @@ import { Services, Testimonials } from "../component/about_me";
 const About = () => {
   return (
     <div className="m-12 ">
-      <div className="flex justify-between items-baseline font-bold text-3xl border-b-4 border-dotted border-green-400 mb-4">
+      <div className="flex justify-between items-baseline font-bold text-3xl border-b-4 border-dotted text-green-500 border-green-500 mb-4">
         <h1>About Me</h1>
         <UserOutlined />
       </div>
@@ -109,7 +109,7 @@ const About = () => {
             </li>
           </ul>
           <a href="/resume/Resume.pdf" download="Tunde_Olumoh.pdf" target="_blank">
-            <button className="border-4 text-green-500 font-extrabold text-lg lg:text-xl border-green-500 p-2 lg:p-4 mt-4 gap-2 flex items-baseline hover:bg-green-300">
+            <button className="border-4 text-green-500 font-extrabold text-lg lg:text-xl border-green-500 p-2 lg:p-4 mt-4 gap-2 flex items-baseline hover:scale-105">
               DOWNLOAD RESUME
               <DownloadOutlined />
             </button>

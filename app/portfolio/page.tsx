@@ -1,19 +1,18 @@
 import { DatabaseOutlined } from "@ant-design/icons";
 import Image from "next/image";
-// import Tenzies from "../"
 
 const Portfolio = () => {
   return (
     <div>
       <div className="m-12">
-        <div className="flex justify-between items-baseline font-bold text-3xl border-b-4 border-dotted border-green-400 mb-4">
+        <div className="flex justify-between items-baseline font-bold text-3xl border-b-4 border-dotted text-green-500 border-green-500 mb-4">
           <h1>Portfolio</h1>
           <p>
             <DatabaseOutlined />
           </p>
         </div>
         <div className="flex flex-col lg:grid grid-cols-2 gap-4 m-4 lg:m-12">
-          <div className="p-4 border-4 rounded-xl max-w-fit m-4 shadow-xl">
+          <div className="p-4 border-4 border-green-500 rounded-xl max-w-fit m-4 shadow-xl">
             <Image
               src={"/images/Tenzies.jpg"}
               alt="tenzies"
@@ -32,7 +31,7 @@ const Portfolio = () => {
               </a>
             </button>
           </div>
-          <div className="p-4 border-4 rounded-xl max-w-fit m-4 shadow-xl">
+          <div className="p-4 border-4 border-green-500 rounded-xl max-w-fit m-4 shadow-xl">
             <Image
               src={"/images/quizzcal.jpg"}
               alt="tenzies"
@@ -52,7 +51,7 @@ const Portfolio = () => {
               </a>
             </button>
           </div>
-          <div className="p-4 border-4 rounded-xl max-w-fit m-4 shadow-xl">
+          <div className="p-4 border-4 border-green-500 rounded-xl max-w-fit m-4 shadow-xl">
             <Image
               src={"/images/VanLife.jpg"}
               alt="tenzies"
@@ -71,7 +70,7 @@ const Portfolio = () => {
               </a>
             </button>
           </div>
-          <div className="p-4 border-4 rounded-xl max-w-fit m-4 shadow-xl">
+          <div className="p-4 border-4 border-green-500 rounded-xl max-w-fit m-4 shadow-xl">
             <Image
               src={"/images/trendecho.jpg"}
               alt="tenzies"
