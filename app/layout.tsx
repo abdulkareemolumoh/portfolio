@@ -26,7 +26,7 @@ export default function RootLayout({
           <div className={`hidden sm:block sm:col-span-2`}>
             <Navbar />
           </div>
-          <div className="col-span-full sm:col-span-10 h-screen overflow-auto ">
+          <div className="col-span-full sm:col-span-10 h-screen overflow-auto mt-16 sm:mt-0">
             <StyledComponentsRegistry>{children}</StyledComponentsRegistry>
           </div>
         </div>
