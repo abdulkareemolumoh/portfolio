@@ -12,12 +12,13 @@ const Skills: React.FC<SkillProps> = ({ label, percent }) => {
       <div className="col-span-3">
         <h1>{label}:</h1>
       </div>
-      <div className="col-span-9 ">
+      <div className="col-span-8 ">
         <Progress
           percent={percent}
           size={[250, 20]}
           status="active"
           strokeColor="rgb(34 197 94)"
+          showInfo={false}
         />
       </div>
     </div>

@@ -7,11 +7,10 @@ const TopNavbar = () => {
   const [switchMenu, setSwitchMenu] = useState(false);
   function toggleSwitch() {
     setSwitchMenu(!switchMenu);
-    console.log("hello");
   }
   return (
     <div>
-      <div className="flex justify-between items-center bg-black text-green-500 px-6 py-4 font-bold sticky">
+      <div className="flex justify-between items-center bg-black text-green-500 px-6 py-4 font-bold fixed w-full z-20">
         <h1>TUNDE ABDULKAREEM OLUMOH</h1>
         <button onClick={toggleSwitch}>
           <MenuOutlined />

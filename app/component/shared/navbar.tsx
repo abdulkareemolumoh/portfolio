@@ -17,7 +17,7 @@ import { usePathname } from "next/navigation";
 const Navbar = () => {
   const pathname = usePathname();
   return (
-    <div className="bg-black text-white flex flex-col justify-between h-screen w-1/2 sm:w-full fixed sm:static z-50">
+    <div className="bg-black text-white flex flex-col justify-between h-screen w-1/2 sm:w-full fixed sm:static z-10 pt-14 sm:pt-0">
       <div>
         <div>
           <Image
@@ -35,7 +35,7 @@ const Navbar = () => {
           <ul>
             <Link href={"/"}>
               <li
-                className={`px-8 py-4 text-xs font-semibold border-b-2 border-gray-700  flex align-bottom gap-2 hover:bg-gray-800 ${
+                className={`px-8 py-4 text-xs font-semibold border-b-2 border-green-500  flex align-bottom gap-2 hover:bg-gray-800 ${
                   pathname === "/" ? "shadow-lg shadow-black bg-gray-800" : ""
                 }`}
               >
@@ -46,7 +46,7 @@ const Navbar = () => {
 
             <Link href={"/about_me"}>
               <li
-                className={`px-8 py-4 text-xs font-semibold border-b-2 border-gray-700  flex align-bottom gap-2 hover:bg-gray-800 ${
+                className={`px-8 py-4 text-xs font-semibold border-b-2 border-green-500  flex align-bottom gap-2 hover:bg-gray-800 ${
                   pathname === "/about_me"
                     ? "shadow-lg shadow-black bg-gray-800"
                     : ""
@@ -58,7 +58,7 @@ const Navbar = () => {
             </Link>
             <Link href={"/resume"}>
               <li
-                className={`px-8 py-4 text-xs font-semibold border-b-2 border-gray-700  flex align-bottom gap-2 hover:bg-gray-800 ${
+                className={`px-8 py-4 text-xs font-semibold border-b-2 border-green-500  flex align-bottom gap-2 hover:bg-gray-800 ${
                   pathname === "/resume"
                     ? "shadow-lg shadow-black bg-gray-800"
                     : ""
@@ -70,7 +70,7 @@ const Navbar = () => {
             </Link>
             <Link href={"/portfolio"}>
               <li
-                className={`px-8 py-4 text-xs font-semibold border-b-2 border-gray-700  flex align-bottom gap-2 hover:bg-gray-800 ${
+                className={`px-8 py-4 text-xs font-semibold border-b-2 border-green-500  flex align-bottom gap-2 hover:bg-gray-800 ${
                   pathname === "/portfolio"
                     ? "shadow-lg shadow-black bg-gray-800"
                     : ""
@@ -86,7 +86,7 @@ const Navbar = () => {
           </li> */}
             <Link href={"/contact"}>
               <li
-                className={`px-8 py-4 text-xs font-semibold border-b-2 border-gray-700  flex align-bottom gap-2 hover:bg-gray-800 ${
+                className={`px-8 py-4 text-xs font-semibold border-b-2 border-green-500  flex align-bottom gap-2 hover:bg-gray-800 ${
                   pathname === "/contact"
                     ? "shadow-lg shadow-black bg-gray-800"
                     : ""
