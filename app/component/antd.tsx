@@ -1,0 +1,47 @@
+"use client";
+import {
+  ProfileOutlined,
+  UserOutlined,
+  CommentOutlined,
+  EyeOutlined,
+  LaptopOutlined,
+  MobileOutlined,
+  PhoneOutlined,
+  ContactsOutlined,
+  MailOutlined,
+  SendOutlined,
+  DownloadOutlined,
+  EnvironmentOutlined,
+  DatabaseOutlined,
+  GithubOutlined,
+  HomeOutlined,
+  TwitterOutlined,
+  MenuOutlined,
+  LinkedinOutlined,
+} from "@ant-design/icons";
+import { Progress, Carousel } from "antd";
+import { Typewriter } from "react-simple-typewriter";
+
+export {
+  Typewriter,
+  Progress,
+  Carousel,
+  ProfileOutlined,
+  UserOutlined,
+  CommentOutlined,
+  EyeOutlined,
+  LaptopOutlined,
+  MobileOutlined,
+  PhoneOutlined,
+  ContactsOutlined,
+  MailOutlined,
+  SendOutlined,
+  DownloadOutlined,
+  EnvironmentOutlined,
+  DatabaseOutlined,
+  GithubOutlined,
+  HomeOutlined,
+  TwitterOutlined,
+  MenuOutlined,
+  LinkedinOutlined,
+};
