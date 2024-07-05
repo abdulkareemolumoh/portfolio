@@ -31,7 +31,7 @@ const Contact = () => {
         </div>
         <div className="p-4 border-4 border-green-500 rounded-xl max-w-fit m-4 shadow-xl shadow-black hover:scale-110 mx-auto">
           <PhoneOutlined className="text-[20rem]" />
-          <h1 className="m-4 font-semibold text-center">+234-80-913-81136</h1>
+          <h1 className="m-4 font-semibold text-center">+2348091381136</h1>
           <button className="py-2 px-4 border rounded-xl border-green-500 flex mx-auto items-center gap-2">
             <PhoneOutlined /> <a href="tel:+2348091381136">Phone</a>
           </button>
