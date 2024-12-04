@@ -15,7 +15,7 @@ const Portfolio = () => {
         <div className="flex flex-col lg:grid grid-cols-2 gap-4 m-4 lg:m-12">
           <div className="p-4 border-4 border-green-500 rounded-xl max-w-fit m-4 shadow-xl">
             <Image
-              src={"/images/VanLife.jpg"}
+              src={"/images/cartrims.png"}
               alt="tenzies"
               width={500}
               height={500}
@@ -25,9 +25,12 @@ const Portfolio = () => {
               }}
               className="rounded-xl m-2 hover:scale-105 mx-auto"
             />
-            <h1 className="m-4 font-semibold text-center">VanLife</h1>
+            <h1 className="m-4 font-semibold text-center">CarTrims</h1>
             <button className="py-2 px-4 border rounded-xl border-green-500 flex mx-auto">
-              <a href="https://vanslifeapp.netlify.app/" target="_blank">
+              <a
+                href="https://cars-trims-kwhkd.ondigitalocean.app/"
+                target="_blank"
+              >
                 View site
               </a>
             </button>
@@ -48,6 +51,25 @@ const Portfolio = () => {
 
             <button className="py-2 px-4 border rounded-xl border-green-500 flex mx-auto">
               <a href="https://trendecho.vercel.app/" target="_blank">
+                View site
+              </a>
+            </button>
+          </div>
+          <div className="p-4 border-4 border-green-500 rounded-xl max-w-fit m-4 shadow-xl">
+            <Image
+              src={"/images/VanLife.jpg"}
+              alt="tenzies"
+              width={500}
+              height={500}
+              style={{
+                width: "auto",
+                height: "auto",
+              }}
+              className="rounded-xl m-2 hover:scale-105 mx-auto"
+            />
+            <h1 className="m-4 font-semibold text-center">VanLife</h1>
+            <button className="py-2 px-4 border rounded-xl border-green-500 flex mx-auto">
+              <a href="https://vanslifeapp.netlify.app/" target="_blank">
                 View site
               </a>
             </button>

@@ -9,7 +9,7 @@ interface SkillProps {
 const Skills: React.FC<SkillProps> = ({ label, percent }) => {
   return (
     <div className="grid grid-cols-12 mb-2 w-fit gap-8 ">
-      <div className="col-span-3">
+      <div className="col-span-4">
         <h1>{label}:</h1>
       </div>
       <div className="col-span-8 ">

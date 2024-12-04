@@ -88,33 +88,43 @@ const About = () => {
             className="flex mx-auto"
           />
         </div>
-        <div className="col-span-3">
-          <h3 className="my-4 font-bold text-2xl">Personal Information</h3>
-          <ul className="text-xl">
-            <li className="my-4 grid grid-cols-2">
-              <span className="font-semibold">Name: </span> Tunde Olumoh
+        <div className="col-span-3 p-4 sm:p-6 rounded-lg shadow-md">
+          <h3 className="my-4 font-bold text-xl sm:text-2xl ">
+            Personal Information
+          </h3>
+          <ul className="text-lg sm:text-xl  space-y-4">
+            <li className="flex flex-col sm:flex-row sm:justify-between">
+              <span className="font-semibold">Name:</span>
+              <span>Tunde Olumoh</span>
             </li>
-            <li className="my-4 grid grid-cols-2">
-              <span className="font-semibold">Residence: </span> Nigeria
+            <li className="flex flex-col sm:flex-row sm:justify-between">
+              <span className="font-semibold">Residence:</span>
+              <span>Nigeria</span>
             </li>
-            <li className="my-4 grid grid-cols-2">
-              <span className="font-semibold">Email: </span>{" "}
-              tundeolumoh@gmail.com
+            <li className="flex flex-col sm:flex-row sm:justify-between">
+              <span className="font-semibold">Email:</span>
+              <span>tundeolumoh@gmail.com</span>
             </li>
-            <li className="my-4 grid grid-cols-2">
-              <span className="font-semibold">Phone: </span>{" "}
-              (+234)-809-113-81136
+            <li className="flex flex-col sm:flex-row sm:justify-between">
+              <span className="font-semibold">Phone:</span>
+              <span>(+234)-809-113-81136</span>
             </li>
-            <li className="my-4 grid grid-cols-2">
-              <span className="font-semibold">Open to work: </span> Available
+            <li className="flex flex-col sm:flex-row sm:justify-between">
+              <span className="font-semibold">Open to work:</span>
+              <span className="text-green-600 font-medium">Available</span>
             </li>
           </ul>
-          <a href="/resume/Resume.pdf" download="Tunde_Olumoh.pdf" target="_blank">
-            <button className="border-4 text-green-500 font-extrabold text-lg lg:text-xl border-green-500 p-2 lg:p-4 mt-4 gap-2 flex items-baseline hover:scale-105">
+          <div className="mt-6 flex justify-center">
+            <a
+              href="/resume/Resume.pdf"
+              download="Tunde_Olumoh.pdf"
+              target="_blank"
+              className="inline-flex items-center border-4 border-green-500 text-green-500 font-bold text-lg lg:text-xl px-4 py-2 lg:px-6 lg:py-3 rounded-lg hover:scale-105 transition-transform"
+            >
               DOWNLOAD RESUME
-              <DownloadOutlined />
-            </button>
-          </a>
+              <DownloadOutlined className="ml-2" />
+            </a>
+          </div>
         </div>
       </div>
       <Services />

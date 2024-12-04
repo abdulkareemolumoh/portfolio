@@ -18,7 +18,7 @@ const Contact = () => {
       </div>
       <div className="flex flex-col lg:grid grid-cols-2 gap-4 m-4 lg:m-12">
         <div className="p-4 border-4 border-green-500 rounded-xl max-w-fit m-4 shadow-xl shadow-black  hover:scale-110 mx-auto">
-          <MailOutlined className="text-[20rem]" />
+          <MailOutlined className="text-[15rem]" />
           <h1 className="m-4 font-semibold text-center">
             tundeolumoh@gmail.com
           </h1>
@@ -30,14 +30,14 @@ const Contact = () => {
           </button>
         </div>
         <div className="p-4 border-4 border-green-500 rounded-xl max-w-fit m-4 shadow-xl shadow-black hover:scale-110 mx-auto">
-          <PhoneOutlined className="text-[20rem]" />
+          <PhoneOutlined className="text-[15rem]" />
           <h1 className="m-4 font-semibold text-center">+2348091381136</h1>
           <button className="py-2 px-4 border rounded-xl border-green-500 flex mx-auto items-center gap-2">
             <PhoneOutlined /> <a href="tel:+2348091381136">Phone</a>
           </button>
         </div>
         <div className="p-4 border-4 border-green-500 rounded-xl max-w-fit m-4 shadow-xl shadow-black hover:scale-110 mx-auto">
-          <EnvironmentOutlined className="text-[20rem]" />
+          <EnvironmentOutlined className="text-[15rem]" />
           <h1 className="m-4 font-semibold text-center">
             Ilorin, Kwara State, Nigeria
           </h1>

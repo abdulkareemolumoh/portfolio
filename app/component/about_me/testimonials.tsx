@@ -44,7 +44,7 @@ const Testimonials = () => {
 
   const testimonys = testimonial.map((testimony, index) => (
     <div key={index}>
-      <p className="bg-black text-white rounded-tl-3xl rounded-br-3xl p-4 lg:p12 flex gap-8 items-center">
+      <p className="bg-black text-white rounded-tl-3xl rounded-br-3xl p-4 lg:p12 flex gap-8 items-center italic">
         <CommentOutlined
           className="text-3xl lg:text-4xl"
           style={{ color: "rgb(34 197 94)" }}

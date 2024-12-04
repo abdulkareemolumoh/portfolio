@@ -4,11 +4,11 @@ const Education = () => {
       id: "1",
       institution: "Docs",
       program: `Software Development`,
-      courses: ["NEXT.js", "Firebase", "tailwindcss", "Bootstrap"],
+      courses: ["NEXT.js", "Firebase", "tailwindcss", "Bootstrap", "Typescript"],
     },
     {
       id: "2",
-      institution: "Docs",
+      institution: "Coursera",
       program: `Meta Front-End Developer`,
       courses: [
         "Advanced React",

@@ -114,6 +114,7 @@ const Resume = () => {
         <div>
           <Skills label="HTML" percent={95} />
           <Skills label="CSS" percent={95} />
+          <Skills label="TailwindCSS" percent={95} />
           <Skills label="JavaScript" percent={85} />
           <Skills label="React" percent={88} />
         </div>
