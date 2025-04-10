@@ -4,7 +4,7 @@ const Projects = () => {
       id: "1",
       title: "CarTrims",
       description:
-        "CarTrims is a premium platform dedicated to transforming the car-buying and selling experience in Nigeria. The app connects buyers and sellers with verified, high-quality vehicles sourced directly from trusted dealers abroad. Designed for ease of use and efficiency, CarTrims ensures every transaction is secure and seamless.",
+        "CarTrims is a modern car marketplace built specifically for the Nigerian market, designed to simplify the process of buying, selling, and bidding on verified vehicles. The platform connects users with trusted dealers, offering features like advanced search filters, a secure bidding system, real-time notifications, and a wallet integration that allows users to fund their account using a uniquely generated bank account number. I was actively involved in the development of both the web and mobile platforms, working with a team to bring the product to life from concept to launch. My contributions focused on building responsive, intuitive user interfaces, integrating the frontend with backend APIs, and ensuring a smooth user experience across devices. I used technologies like Next.js, TypeScript, Tailwind CSS, and Material UI for the frontend, and collaborated on the React Native mobile app using Expo. We also implemented third-party APIs for payments, account generation, and notifications. CarTrims currently holds a 4.8/5 rating with over 10,000 downloads and has become a trusted solution for Nigerians looking to buy and sell quality vehicles with confidence.",
     },
     {
       id: "2",

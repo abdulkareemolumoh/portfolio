@@ -27,10 +27,7 @@ const Portfolio = () => {
             />
             <h1 className="m-4 font-semibold text-center">CarTrims</h1>
             <button className="py-2 px-4 border rounded-xl border-green-500 flex mx-auto">
-              <a
-                href="https://cars-trims-kwhkd.ondigitalocean.app/"
-                target="_blank"
-              >
+              <a href="https://carstrims.com/" target="_blank">
                 View site
               </a>
             </button>

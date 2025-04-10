@@ -21,92 +21,6 @@ const Resume = () => {
             Education
           </h1>
           <Education />
-          {/* <div className="border-l-4 border-green-500 p-4 m-4 lg:p-8 lg:m-8">
-            <h1 className="text-xl font-semibold ">Docs</h1>
-            <h2 className="">Software Development</h2>
-            <h2>
-              <button className="p-2 bg-green-500 rounded-xl m-2">
-                NEXT.js
-              </button>
-              <button className="p-2 bg-green-500 rounded-xl m-2">
-                Firebase
-              </button>
-              <button className="p-2 bg-green-500 rounded-xl m-2">
-                tailwindcss
-              </button>
-              <button className="p-2 bg-green-500 rounded-xl m-2">
-                Bootstrap
-              </button>
-            </h2>
-          </div>
-          <div className="border-l-4 border-green-500 p-4 m-4 lg:p-8 lg:m-8">
-            <h1 className="text-xl font-semibold ">Coursera</h1>
-            <h2 className="">Meta Front-End Developer</h2>
-            <h2>
-              <button className="p-2 bg-green-500 rounded-xl m-2">
-                Advanced React
-              </button>
-
-              <button className="p-2 bg-green-500 rounded-xl m-2">
-                Front-End Developer Capstone
-              </button>
-
-              <button className="p-2 bg-green-500 rounded-xl m-2">
-                Introduction to Front-End Development
-              </button>
-
-              <button className="p-2 bg-green-500 rounded-xl m-2">
-                Version Control
-              </button>
-
-              <button className="p-2 bg-green-500 rounded-xl m-2">
-                Coding Interview Preparation
-              </button>
-
-              <button className="p-2 bg-green-500 rounded-xl m-2">
-                React Basics
-              </button>
-
-              <button className="p-2 bg-green-500 rounded-xl m-2">
-                Principles of UX/UI Design
-              </button>
-
-              <button className="p-2 bg-green-500 rounded-xl m-2">
-                Programming with JavaScript
-              </button>
-
-              <button className="p-2 bg-green-500 rounded-xl m-2">
-                HTML and CSS in depth
-              </button>
-            </h2>
-          </div>
-          <div className="border-l-4 border-green-500 p-4 m-4 lg:p-8 lg:m-8">
-            <h1 className="text-xl font-semibold ">freeCodeCamp</h1>
-            <h2 className="">Responsive Web Design</h2>
-            <h2>
-              <button className="p-2 bg-green-500 rounded-xl m-2">HTML</button>
-              <button className="p-2 bg-green-500 rounded-xl m-2">CSS</button>
-              <button className="p-2 bg-green-500 rounded-xl m-2">
-                JavaScript
-              </button>
-            </h2>
-          </div>
-          <div className="border-l-4 border-green-500 p-4 m-4 lg:p-8 lg:m-8">
-            <h1 className="text-xl font-semibold ">Scrimba</h1>
-            <h2 className="">Responsive Web Design</h2>
-            <h2>
-              <button className="p-2 bg-green-500 rounded-xl m-2">React</button>
-              <button className="p-2 bg-green-500 rounded-xl m-2">
-                Advanced React
-              </button>
-            </h2>
-          </div>
-          <div className="border-l-4 border-green-500 p-4 m-4 lg:p-8 lg:m-8">
-            <h1 className="text-xl font-semibold ">
-              Federal University of Technology
-            </h1>
-            <h2 className="">Civil Engineering: Second Class Upper 2016</h2>
-          </div> */}
         </div>
       </div>
       <h1 className="text-center text-2xl font-bold underline m-4">SKILLS</h1>
@@ -120,8 +34,8 @@ const Resume = () => {
         </div>
         <div>
           <Skills label="Firebase" percent={92} />
-          <Skills label="Next.js" percent={75} />
-          <Skills label="TypeScript" percent={80} />
+          <Skills label="Next.js" percent={90} />
+          <Skills label="TypeScript" percent={85} />
           <Skills label="Github" percent={90} />
         </div>
       </div>
