@@ -18,6 +18,7 @@ import {
   TwitterOutlined,
   MenuOutlined,
   LinkedinOutlined,
+  CloudServerOutlined,
 } from "@ant-design/icons";
 import { Progress, Carousel } from "antd";
 import { Typewriter } from "react-simple-typewriter";
@@ -44,4 +45,5 @@ export {
   TwitterOutlined,
   MenuOutlined,
   LinkedinOutlined,
+  CloudServerOutlined,
 };

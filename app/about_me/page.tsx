@@ -12,69 +12,89 @@ const About = () => {
       </div>
       <div className="flex flex-col lg:grid grid-cols-8 gap-4 lg:gap-8 ">
         <div className="col-span-5 text-justify ">
-          <h1 className="my-4 font-bold text-2xl">Frontend Developer</h1>
-          <p className="text-xl  p-2">
-            Hello! I&apos;m Tunde Abdulkareem Olumoh, a dedicated frontend
-            developer passionate about creating exceptional digital experiences.
-            My journey in the realm of web development has been driven by a
-            commitment to excellence and a desire to bring creativity to the
-            forefront of every project.
+          <h1 className="my-4 font-bold text-2xl">Fullstack Engineer</h1>
+          <p className="text-xl p-2">
+            I’m a <span className="font-semibold">Fullstack Developer</span>{" "}
+            passionate about building scalable, user-focused, and modern digital
+            solutions. With hands-on experience in both frontend and backend
+            technologies, I specialize in turning ideas into production-ready
+            applications that are efficient, reliable, and delightful to use.
           </p>
+          <p className="text-xl p-2">
+            On the frontend, I craft intuitive and responsive user interfaces
+            with
+            <span className="font-semibold">
+              {" "}
+              React, Next.js, React Native, Tailwind CSS, and TypeScript
+            </span>
+            . On the backend, I design and implement robust APIs, database
+            schemas, and business logic using
+            <span className="font-semibold">
+              {" "}
+              NestJS, Prisma, and PostgreSQL
+            </span>
+            . This combination allows me to deliver seamless end-to-end
+            experiences across web and mobile platforms.
+          </p>
+          <p className="text-xl p-2">
+            I thrive on solving real-world challenges—whether it’s architecting
+            a scalable backend, integrating APIs, or refining UI/UX for
+            performance and accessibility. Every project I take on is approached
+            with a balance of technical excellence and user-centric design.
+          </p>
+          <p className="text-xl p-2">
+            Beyond coding, I’m dedicated to continuous growth, collaboration,
+            and exploring emerging technologies to stay ahead in a fast-moving
+            industry.
+          </p>
+
           <h1 className="my-4 font-bold text-2xl">Expertise</h1>
-          <p className="text-xl p-2 ">
-            <span className="font-semibold">Design-Driven Focus:</span>{" "}
-            Throughout my development journey, I&apos;ve been committed to
-            achieving excellence. I specialize in creating seamless and visually
-            captivating websites that engage users right from the initial click.
+          <p className="text-xl p-2">
+            <span className="font-semibold">End-to-End Development:</span>
+            Skilled in managing the full software lifecycle—from database design
+            and API development to frontend implementation and deployment.
           </p>
           <p className="text-xl p-2">
-            <span className="font-semibold">User-Centric Design:</span> I firmly
-            believe in the power of user-centric design. Every line of code I
-            write is aimed at enhancing the user experience, from ensuring
-            intuitive navigation to creating visually appealing designs that
-            make every interaction memorable.
+            <span className="font-semibold">User-Centric Approach:</span>I build
+            with the end-user in mind, ensuring clean interfaces, smooth
+            navigation, and engaging interactions across all devices.
           </p>
           <p className="text-xl p-2">
-            <span className="font-semibold">Innovative Problem-Solving:</span>{" "}
-            My approach to problem-solving is grounded in innovation. I tackle
-            challenges head-on, exploring creative solutions to deliver results
-            that consistently exceed expectations.
+            <span className="font-semibold">Problem-Solving & Innovation:</span>
+            I tackle challenges with creativity and precision, consistently
+            delivering solutions that exceed expectations.
           </p>
+
           <h1 className="my-4 font-bold text-2xl">Technical Proficiency</h1>
           <p className="text-xl p-2">
-            <span className="font-semibold">Languages:</span> Proficient in
-            HTML, CSS, and JavaScript, I leverage these languages to build
-            robust and responsive websites. My commitment to staying current
-            with the latest technologies ensures that my skills are always at
-            the cutting edge.
+            <span className="font-semibold">Languages:</span>
+            Proficient in JavaScript, TypeScript, HTML, and CSS. Experienced in
+            writing clean, maintainable, and scalable code.
           </p>
           <p className="text-xl p-2">
-            <span className="font-semibold"> Frameworks:</span> I have a strong
-            command of frontend frameworks, with focus on TypeScript, Bootstrap,
-            React, Next.js and Tailwindcss. This enables me to develop dynamic
-            and scalable applications that meet the demands of modern web
-            development.
+            <span className="font-semibold">Frameworks & Tools:</span>
+            React, Next.js, React Native, Tailwind CSS, NestJS, Prisma, and
+            PostgreSQL. Familiar with Git, CI/CD, and cloud-based deployments.
           </p>
+
           <h1 className="my-4 font-bold text-2xl">Commitment to Quality</h1>
           <p className="text-xl p-2">
-            <span className="font-semibold">Attention to Detail:</span>{" "}
-            Attention to detail is the cornerstone of my work. Whether refining
-            layouts, fine-tuning responsiveness, or optimizing performance, I
-            ensure that every detail contributes to a polished final product.
+            <span className="font-semibold">Attention to Detail:</span>
+            From clean code to optimized performance, I focus on delivering
+            polished products that are both functional and reliable.
           </p>
           <p className="text-xl p-2">
-            <span className="font-semibold">Continuous Growth:</span> I embrace
-            learning as a lifelong journey. By staying curious and exploring
-            emerging technologies, I guarantee that my skill set evolves with
-            the ever-changing landscape of frontend development.
+            <span className="font-semibold">Continuous Growth:</span>I embrace
+            learning as a lifelong process, constantly exploring emerging
+            technologies and refining my craft.
           </p>
+
           <h1 className="my-4 font-bold text-2xl">Let&apos;s Collaborate</h1>
           <p className="text-xl p-2">
-            If you&apos;re seeking a frontend developer who combines technical
-            expertise with a passion for creating extraordinary digital
-            experiences, let&apos;s connect. I&apos;m excited about the
-            possibility of collaborating on projects that push boundaries and
-            leave a lasting impact. Thank you for visiting!
+            If you&apos;re looking for a developer who can bridge the gap
+            between frontend and backend, and deliver impactful digital
+            experiences, let&apos;s connect. I’m open to new opportunities,
+            collaborations, and exciting projects that push boundaries.
           </p>
           <Image
             src={"/images/signature.png"}
@@ -88,11 +108,12 @@ const About = () => {
             className="flex mx-auto"
           />
         </div>
+
         <div className="col-span-3 p-4 sm:p-6 rounded-lg shadow-md">
           <h3 className="my-4 font-bold text-xl sm:text-2xl ">
             Personal Information
           </h3>
-          <ul className="text-lg sm:text-xl  space-y-4">
+          <ul className="text-lg sm:text-xl space-y-4">
             <li className="flex flex-col sm:flex-row sm:justify-between">
               <span className="font-semibold">Name:</span>
               <span>Tunde Olumoh</span>

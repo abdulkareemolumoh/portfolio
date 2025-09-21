@@ -29,14 +29,21 @@ const Resume = () => {
           <Skills label="HTML" percent={95} />
           <Skills label="CSS" percent={95} />
           <Skills label="TailwindCSS" percent={95} />
-          <Skills label="JavaScript" percent={85} />
-          <Skills label="React" percent={88} />
+          <Skills label="JavaScript (ES6+)" percent={90} />
+          <Skills label="TypeScript" percent={88} />
+          <Skills label="React.js" percent={90} />
+          <Skills label="Next.js" percent={88} />
+          <Skills label="React Native" percent={85} />
         </div>
         <div>
-          <Skills label="Firebase" percent={92} />
-          <Skills label="Next.js" percent={90} />
-          <Skills label="TypeScript" percent={85} />
-          <Skills label="Github" percent={90} />
+          <Skills label="NestJS" percent={85} />
+          <Skills label="Node.js" percent={85} />
+          <Skills label="Prisma ORM" percent={88} />
+          <Skills label="PostgreSQL" percent={87} />
+          <Skills label="Firebase" percent={90} />
+          <Skills label="Cloudinary" percent={85} />
+          <Skills label="Git & GitHub" percent={92} />
+          <Skills label="REST API Design" percent={90} />
         </div>
       </div>
     </div>

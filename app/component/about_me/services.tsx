@@ -1,53 +1,71 @@
 import React from "react";
-import { EyeOutlined, LaptopOutlined, MobileOutlined } from "../antd";
+import {
+  DatabaseOutlined,
+  LaptopOutlined,
+  MobileOutlined,
+  EyeOutlined,
+  CloudServerOutlined,
+} from "../antd";
 
 const Services = () => {
+  const services = [
+    {
+      icon: LaptopOutlined,
+      title: "Web Development",
+      description:
+        "I develop robust, scalable, and high-performance applications — from frontend interfaces to backend APIs.",
+    },
+    {
+      icon: DatabaseOutlined,
+      title: "Backend Development",
+      description:
+        "Designing and implementing secure databases, RESTful APIs, and server-side logic with modern frameworks.",
+    },
+    {
+      icon: CloudServerOutlined,
+      title: "Cloud & Deployment",
+      description:
+        "Deploying and managing applications on cloud platforms with CI/CD pipelines, containerization, and monitoring.",
+    },
+    {
+      icon: EyeOutlined,
+      title: "Web Design",
+      description:
+        "Crafting intuitive and visually appealing interfaces that enhance user experience and engagement.",
+    },
+    {
+      icon: MobileOutlined,
+      title: "Responsive Design",
+      description:
+        "Ensuring seamless functionality across all devices, from desktops to smartphones.",
+    },
+  ];
+
   return (
-    <div className="py-12 ">
-      <h1 className="text-center text-3xl md:text-4xl font-bold underline  my-8">
-        SERVICES
-      </h1>
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 text-center px-6 md:px-12">
-        <div className="flex flex-col items-center  shadow-md rounded-lg p-6 hover:shadow-lg transition-shadow">
-          <LaptopOutlined
-            className="text-6xl mb-4"
-            style={{ color: "rgb(34 197 94)" }}
-            aria-label="Web Development Icon"
-          />
-          <h1 className="text-xl font-semibold ">
-            Web Development
-          </h1>
-          <p className=" mt-2">
-            Building robust, scalable, and efficient web applications tailored
-            to your needs.
-          </p>
-        </div>
-        <div className="flex flex-col items-center  shadow-md rounded-lg p-6 hover:shadow-lg transition-shadow">
-          <EyeOutlined
-            className="text-6xl mb-4"
-            style={{ color: "rgb(34 197 94)" }}
-            aria-label="Web Design Icon"
-          />
-          <h1 className="text-xl font-semibold ">Web Design</h1>
-          <p className=" mt-2">
-            Creating visually appealing, user-friendly, and responsive designs.
-          </p>
-        </div>
-        <div className="flex flex-col items-center  shadow-md rounded-lg p-6 hover:shadow-lg transition-shadow">
-          <MobileOutlined
-            className="text-6xl mb-4"
-            style={{ color: "rgb(34 197 94)" }}
-            aria-label="Responsive Design Icon"
-          />
-          <h1 className="text-xl font-semibold ">
-            Responsive Design
-          </h1>
-          <p className=" mt-2">
-            Ensuring your applications work seamlessly across all devices.
-          </p>
-        </div>
+    <section className="py-16">
+      <h2 className="text-center text-3xl md:text-4xl font-bold mb-12">
+        <span className="underline decoration-green-500 underline-offset-8">
+          Services
+        </span>
+      </h2>
+
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10 px-6 md:px-12">
+        {services.map(({ icon: Icon, title, description }, index) => (
+          <div
+            key={index}
+            className="flex flex-col items-center text-center shadow-md rounded-2xl p-8  hover:shadow-xl transition-shadow duration-300"
+          >
+            <Icon
+              className="text-6xl mb-6"
+              style={{ color: "rgb(34 197 94)" }}
+              aria-label={`${title} Icon`}
+            />
+            <h3 className="text-xl font-semibold mb-3">{title}</h3>
+            <p className="">{description}</p>
+          </div>
+        ))}
       </div>
-    </div>
+    </section>
   );
 };
 

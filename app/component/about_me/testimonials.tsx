@@ -9,36 +9,36 @@ const Testimonials = () => {
       name: "Kolawole Tajudeen",
       role: "Senior Software Engineer at Clipboard Health",
       image:
-        "https://media.licdn.com/dms/image/C5603AQHd8thu6_dOGg/profile-displayphoto-shrink_800_800/0/1574122461702?e=1708560000&v=beta&t=6ft6-g7GR7rM0jY1Ahc8tLedyJqURoFzNDwNoyg5XGA",
+        "https://media.licdn.com/dms/image/v2/D4D35AQHmsze-jlPTmg/profile-framedphoto-shrink_800_800/B4DZb6HtjvGkAk-/0/1747953048057?e=1759068000&v=beta&t=WW8khic6ls5HbyrLb_b1ibH-2SYUuPpk-yWm5BKJLtU",
       testimony:
-        "Tunde is a dynamic and committed engineer with a robust foundation in web development. His passion for software engineering is evident in his continuous pursuit of knowledge and his proactive approach to solving complex challenges. Tunde's quick learning abilities and unwavering enthusiasm make him a valuable asset to any project. His dedication and drive set him apart as a standout software engineer, consistently delivering high-quality solutions and contributing positively to the success of every endeavor.",
+        "Tunde is a dynamic and committed full-stack engineer with a robust foundation across frontend and backend development. His passion for software engineering is evident in his continuous pursuit of knowledge and proactive approach to solving complex challenges. Tunde’s quick learning abilities and enthusiasm make him a valuable asset to any project, consistently delivering high-quality solutions end-to-end.",
     },
     {
       id: "2",
       name: "Majid Kareem",
-      role: "Fullstack developer and React enthusiast",
+      role: "Full-Stack Developer and React Enthusiast",
       image:
-        "https://media.licdn.com/dms/image/C4D03AQG0MvxjV-pE-Q/profile-displayphoto-shrink_800_800/0/1662375034226?e=1708560000&v=beta&t=1fZcVkYMUVZSINziczK0oh78gq5flqMPydVyfKB80Z0",
+        "https://media.licdn.com/dms/image/v2/C4D03AQG0MvxjV-pE-Q/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1662375034226?e=1761177600&v=beta&t=CzfDSwUg-zYGZXhW7kMbrcnp7wx_vpKA8yjH3Zlj1Gs",
       testimony:
-        "Tunde is an exceptional team player with a profound understanding of web development. His passion, open communication, and collaborative spirit contribute significantly to the success of any project. Tunde's ability to seamlessly integrate into diverse teams and his innovative problem-solving make him a valuable asset in achieving shared goals.",
+        "Tunde is an exceptional team player with a profound understanding of full-stack development. From designing APIs to crafting intuitive interfaces, his passion, open communication, and collaborative spirit contribute significantly to the success of any project.",
     },
     {
       id: "3",
       name: "Abdulgafar Tajudeen",
       role: "Frontend Developer",
       image:
-        "https://media.licdn.com/dms/image/D4D35AQE3sbV-71sslg/profile-framedphoto-shrink_800_800/0/1692878322753?e=1703955600&v=beta&t=SdKmX0G-iu6nNYiMlPs4fC3aNnGAhsDV51r-z9Cv1ts",
+        "https://media.licdn.com/dms/image/v2/D4D35AQEIsn7SB6AIcA/profile-framedphoto-shrink_800_800/profile-framedphoto-shrink_800_800/0/1738214632402?e=1759068000&v=beta&t=-JHN0ZTH6mrVa-YTtstsU6Nm5niNfsOoLWoEfFO-7xs",
       testimony:
-        "With extensive knowledge and a collaborative spirit, Tunde proves to be a valuable team member. His commitment to excellence and proactive mindset significantly contribute to shared successes, making him an excellent addition to any team.",
+        "With extensive full-stack knowledge and a collaborative spirit, Tunde proves to be a valuable team member. His ability to work across the stack, combined with his commitment to excellence, makes him an excellent addition to any team.",
     },
     {
       id: "4",
       name: "Moshood Shabi",
       role: "Full-Stack Developer",
       image:
-        "https://media.licdn.com/dms/image/D4D35AQHMvW4-7aaHFQ/profile-framedphoto-shrink_200_200/0/1687098840977?e=1703984400&v=beta&t=0MYuNVZy3PkUkizpzbFimWNNIS98c4Ablg4kS_WqX9Y",
+        "https://media.licdn.com/dms/image/v2/D4D03AQHfOqYwx6ODUQ/profile-displayphoto-shrink_800_800/B4DZhmkvNBGkAc-/0/1754067567280?e=1761177600&v=beta&t=JvTEYAWHX6KpCMq2vtUfYCpFS_LpKNAHMbf2Qn705gY",
       testimony:
-        "With a sharp mind for problem-solving and a dedication to open communication, this developer seamlessly integrates into diverse teams, contributing significantly to shared goals.",
+        "With a sharp mind for problem-solving and a dedication to open communication, Tunde thrives as a full-stack developer. He seamlessly integrates into teams, contributing significantly to both frontend and backend goals.",
     },
   ];
 

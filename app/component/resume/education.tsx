@@ -1,48 +1,64 @@
 const Education = () => {
-  const educationtDetails = [
-    {
-      id: "1",
-      institution: "Docs",
-      program: `Software Development`,
-      courses: ["NEXT.js", "Firebase", "tailwindcss", "Bootstrap", "Typescript"],
-    },
-    {
-      id: "2",
-      institution: "Coursera",
-      program: `Meta Front-End Developer`,
-      courses: [
-        "Advanced React",
-        "Front-End Developer Capstone",
-        "Introduction to Front-End Development",
-        "Version Control",
-        "Coding Interview Preparation",
-        "React Basics",
-        "Principles of UX/UI Design",
-        "Programming with JavaScript",
-        "HTML and CSS in depth",
-      ],
-    },
-    {
-      id: "3",
-      institution: "freeCodeCamp",
-      program: `Responsive Web Design`,
-      courses: ["HTML", "CSS", "JavaScript"],
-    },
-    {
-      id: "4",
-      institution: "freeCodeCamp",
-      program: `Responsive Web Design`,
-      courses: ["React", "Advanced React"],
-    },
-    {
-      id: "5",
-      institution: "Federal University of Technology",
-      program: `Civil Engineering: Second Class Upper 2016`,
-      courses: [],
-    },
-  ];
+const educationDetails = [
+  {
+    id: "1",
+    institution: "Docs & Self-Learning",
+    program: "Full-Stack Software Development",
+    courses: [
+      "Next.js",
+      "React Native",
+      "NestJS",
+      "Prisma ORM",
+      "PostgreSQL",
+      "Cloudinary",
+      "Firebase",
+      "TypeScript",
+      "TailwindCSS",
+    ],
+  },
+  {
+    id: "2",
+    institution: "Coursera",
+    program: "Meta Front-End Developer Professional Certificate",
+    courses: [
+      "Advanced React",
+      "Front-End Developer Capstone",
+      "Introduction to Front-End Development",
+      "Version Control (Git & GitHub)",
+      "Coding Interview Preparation",
+      "React Basics",
+      "Principles of UX/UI Design",
+      "Programming with JavaScript",
+      "HTML and CSS in Depth",
+    ],
+  },
+  {
+    id: "3",
+    institution: "freeCodeCamp",
+    program: "Backend Development & APIs",
+    courses: [
+      "Node.js & Express",
+      "REST API Design",
+      "Authentication & Security",
+      "Database Integration",
+    ],
+  },
+  {
+    id: "4",
+    institution: "freeCodeCamp",
+    program: "Responsive Web Design",
+    courses: ["HTML", "CSS", "JavaScript", "React"],
+  },
+  {
+    id: "5",
+    institution: "Federal University of Technology, Minna",
+    program: "B.Eng. Civil Engineering – Second Class Upper (2016)",
+    courses: [],
+  },
+];
 
-  const education = educationtDetails.map((edu) => (
+
+  const education = educationDetails.map((edu) => (
     <div
       className="border-l-4 border-green-500 p-4 m-4 lg:p-8 lg:m-8"
       key={edu.id}

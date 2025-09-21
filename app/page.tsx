@@ -16,7 +16,10 @@ export default function Home() {
               }}
             >
               <Typewriter
-                words={[" Front-End Developer", " Technical Support Engineer"]}
+                words={[
+                  " Fullstack Developer , Front-End Developer ",
+                  " Technical Support Engineer ",
+                ]}
                 loop={5}
                 cursor
                 cursorStyle=""
