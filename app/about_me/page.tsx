@@ -137,7 +137,7 @@ const About = () => {
           </ul>
           <div className="mt-6 flex justify-center">
             <a
-              href="/resume/Resume.pdf"
+              href="/resume/Tunde_Olumoh_Resume_FE.pdf"
               download="Tunde_Olumoh.pdf"
               target="_blank"
               className="inline-flex items-center border-4 border-green-500 text-green-500 font-bold text-lg lg:text-xl px-4 py-2 lg:px-6 lg:py-3 rounded-lg hover:scale-105 transition-transform"

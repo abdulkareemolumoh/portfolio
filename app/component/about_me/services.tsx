@@ -53,7 +53,7 @@ const Services = () => {
         {services.map(({ icon: Icon, title, description }, index) => (
           <div
             key={index}
-            className="flex flex-col items-center text-center shadow-md rounded-2xl p-8  hover:shadow-xl transition-shadow duration-300"
+            className="flex flex-col items-center text-center shadow-md rounded-2xl p-8  hover:shadow-xl transition-shadow duration-300 hover:border-green-500 hover:border-2"
           >
             <Icon
               className="text-6xl mb-6"
