@@ -22,13 +22,15 @@ const Navbar = () => {
         <div>
           <Image
             src={"/images/passport.jpg"}
-            width={600}
-            height={600}
-            style={{
-              width: "auto",
-              height: "auto",
-            }}
+            width={1000}
+            height={1000}
+            // style={{
+            //   width: "auto",
+            //   height: "auto",
+            // }}
+            className="w-full h-64"
             alt="profile_img"
+            priority
           />
         </div>
         <div className="flex flex-col ">
