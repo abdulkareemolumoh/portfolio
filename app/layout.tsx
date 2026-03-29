@@ -22,11 +22,11 @@ export default function RootLayout({
         <div className="block sm:hidden w-full">
           <TopNavbar />
         </div>
-        <div className="grid grid-cols-12 ">
-          <div className={`hidden sm:block sm:col-span-2`}>
+        <div className="min-h-screen sm:grid sm:grid-cols-[320px_minmax(0,1fr)]">
+          <div className="hidden h-screen sm:sticky sm:top-0 sm:block">
             <Navbar />
           </div>
-          <div className="col-span-full sm:col-span-10 h-screen overflow-auto mt-16 sm:mt-0">
+          <div className="mt-16 min-w-0 sm:mt-0 sm:h-screen sm:overflow-y-auto">
             <StyledComponentsRegistry>{children}</StyledComponentsRegistry>
           </div>
         </div>

@@ -32,9 +32,9 @@ const Navbar = ({ mobile = false, onNavigate }: NavbarProps) => {
 
   return (
     <aside
-      className={`flex h-screen flex-col justify-between border-r border-green-500/30 bg-gradient-to-b from-black via-gray-950 to-black text-white ${
+      className={`flex h-full flex-col justify-between overflow-y-auto border-r border-green-500/30 bg-gradient-to-b from-black via-gray-950 to-black text-white ${
         mobile
-          ? "fixed inset-y-0 left-0 z-30 w-[82%] max-w-sm shadow-2xl shadow-black/60"
+          ? "fixed inset-y-0 left-0 z-30 h-screen w-[82%] max-w-sm shadow-2xl shadow-black/60"
           : "w-full"
       }`}
     >
