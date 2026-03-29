@@ -14,114 +14,133 @@ import {
 } from "../antd";
 import { usePathname } from "next/navigation";
 
-const Navbar = () => {
-  const pathname = usePathname();
-  return (
-    <div className="bg-black text-white flex flex-col justify-between h-screen w-1/2 sm:w-full fixed sm:static z-10 pt-14 sm:pt-0">
-      <div>
-        <div>
-          <Image
-            src={"/images/passport.jpg"}
-            width={1000}
-            height={1000}
-            // style={{
-            //   width: "auto",
-            //   height: "auto",
-            // }}
-            className="w-full h-64"
-            alt="profile_img"
-            priority
-          />
-        </div>
-        <div className="flex flex-col ">
-          <ul>
-            <Link href={"/"}>
-              <li
-                className={`px-8 py-4 text-xs font-semibold border-b-2 border-green-500  flex align-bottom gap-2 hover:bg-gray-800 ${
-                  pathname === "/" ? "shadow-lg shadow-black bg-gray-800" : ""
-                }`}
-              >
-                <HomeOutlined />
-                HOME
-              </li>
-            </Link>
+const navItems = [
+  { href: "/", label: "Home", icon: HomeOutlined },
+  { href: "/about_me", label: "About Me", icon: UserOutlined },
+  { href: "/resume", label: "Resume", icon: ProfileOutlined },
+  { href: "/portfolio", label: "Portfolio", icon: DatabaseOutlined },
+  { href: "/contact", label: "Contact", icon: ContactsOutlined },
+];
 
-            <Link href={"/about_me"}>
-              <li
-                className={`px-8 py-4 text-xs font-semibold border-b-2 border-green-500  flex align-bottom gap-2 hover:bg-gray-800 ${
-                  pathname === "/about_me"
-                    ? "shadow-lg shadow-black bg-gray-800"
-                    : ""
-                }`}
-              >
-                <UserOutlined />
-                ABOUT ME
-              </li>
-            </Link>
-            <Link href={"/resume"}>
-              <li
-                className={`px-8 py-4 text-xs font-semibold border-b-2 border-green-500  flex align-bottom gap-2 hover:bg-gray-800 ${
-                  pathname === "/resume"
-                    ? "shadow-lg shadow-black bg-gray-800"
-                    : ""
-                }`}
-              >
-                <ProfileOutlined />
-                RESUME
-              </li>
-            </Link>
-            <Link href={"/portfolio"}>
-              <li
-                className={`px-8 py-4 text-xs font-semibold border-b-2 border-green-500  flex align-bottom gap-2 hover:bg-gray-800 ${
-                  pathname === "/portfolio"
-                    ? "shadow-lg shadow-black bg-gray-800"
-                    : ""
-                }`}
-              >
-                <DatabaseOutlined />
-                PORTFOLIO
-              </li>
-            </Link>
-            {/* <li className="px-12 py-4 text-xl font-semibold border-b-2  flex align-bottom gap-2">
-            <BookOutlined />
-            BLOG
-          </li> */}
-            <Link href={"/contact"}>
-              <li
-                className={`px-8 py-4 text-xs font-semibold border-b-2 border-green-500  flex align-bottom gap-2 hover:bg-gray-800 ${
-                  pathname === "/contact"
-                    ? "shadow-lg shadow-black bg-gray-800"
-                    : ""
-                }`}
-              >
-                <ContactsOutlined />
-                CONTACT
-              </li>
-            </Link>
-          </ul>
-        </div>
-      </div>
+type NavbarProps = {
+  mobile?: boolean;
+  onNavigate?: () => void;
+};
+
+const Navbar = ({ mobile = false, onNavigate }: NavbarProps) => {
+  const pathname = usePathname();
+
+  return (
+    <aside
+      className={`flex h-screen flex-col justify-between border-r border-green-500/30 bg-gradient-to-b from-black via-gray-950 to-black text-white ${
+        mobile
+          ? "fixed inset-y-0 left-0 z-30 w-[82%] max-w-sm shadow-2xl shadow-black/60"
+          : "w-full"
+      }`}
+    >
       <div>
-        <div className="flex justify-evenly">
-          <a href="https://github.com/abdulkareemolumoh" target="_blank">
-            <GithubOutlined className="text-xl" />
+        <div className="border-b border-green-500/20 p-5">
+          <div className="relative overflow-hidden rounded-2xl border border-green-500/30">
+            <Image
+              src={"/images/passport.jpg"}
+              width={1000}
+              height={1000}
+              className="h-64 w-full object-cover"
+              alt="profile_img"
+              priority
+            />
+          </div>
+
+          <div className="mt-5">
+            <h2 className="text-xl font-bold tracking-wide text-white">
+              Tunde Olumoh
+            </h2>
+            <p className="mt-2 text-sm leading-6 text-gray-300">
+              Full-stack developer focused on clean user experiences and robust
+              backend systems.
+            </p>
+          </div>
+
+          <div className="mt-4 inline-flex rounded-full border border-green-500/40 bg-green-500/10 px-3 py-1 text-xs font-semibold uppercase tracking-[0.2em] text-green-300">
+            Open to work
+          </div>
+        </div>
+
+        <nav className="px-4 py-5">
+          <ul className="space-y-2">
+            {navItems.map((item) => {
+              const Icon = item.icon;
+              const isActive = pathname === item.href;
+
+              return (
+                <li key={item.href}>
+                  <Link
+                    href={item.href}
+                    onClick={onNavigate}
+                    className={`flex items-center gap-3 rounded-xl border px-4 py-3 text-sm font-semibold uppercase tracking-[0.18em] transition ${
+                      isActive
+                        ? "border-green-500 bg-green-500/15 text-green-300 shadow-lg shadow-green-950/40"
+                        : "border-transparent text-gray-200 hover:border-green-500/30 hover:bg-white/5 hover:text-white"
+                    }`}
+                  >
+                    <span
+                      className={`flex h-10 w-10 items-center justify-center rounded-full text-base ${
+                        isActive
+                          ? "bg-green-500 text-black"
+                          : "bg-white/5 text-green-300"
+                      }`}
+                    >
+                      <Icon />
+                    </span>
+                    <span>{item.label}</span>
+                  </Link>
+                </li>
+              );
+            })}
+          </ul>
+        </nav>
+      </div>
+
+      <div className="border-t border-green-500/20 p-5">
+        <div className="flex items-center justify-between gap-3">
+          <a
+            href="https://github.com/abdulkareemolumoh"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="flex h-11 w-11 items-center justify-center rounded-full border border-green-500/30 bg-white/5 text-lg text-green-300 transition hover:border-green-400 hover:bg-green-500/10"
+          >
+            <GithubOutlined />
           </a>
-          <a href="https://twitter.com/tundeolumoh" target="_blank">
-            <TwitterOutlined className="text-xl" />
+          <a
+            href="https://twitter.com/tundeolumoh"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="flex h-11 w-11 items-center justify-center rounded-full border border-green-500/30 bg-white/5 text-lg text-green-300 transition hover:border-green-400 hover:bg-green-500/10"
+          >
+            <TwitterOutlined />
           </a>
-          <a href="mailto:tundeolumoh@gmail.com" target="_blanl">
-            <MailOutlined className="text-xl" />
+          <a
+            href="mailto:tundeolumoh@gmail.com"
+            className="flex h-11 w-11 items-center justify-center rounded-full border border-green-500/30 bg-white/5 text-lg text-green-300 transition hover:border-green-400 hover:bg-green-500/10"
+          >
+            <MailOutlined />
           </a>
-          <a href="https://www.linkedin.com/in/abdulkareemolumoh/">
+          <a
+            href="https://www.linkedin.com/in/abdulkareemolumoh/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="flex h-11 w-11 items-center justify-center rounded-full border border-green-500/30 bg-white/5 text-lg text-green-300 transition hover:border-green-400 hover:bg-green-500/10"
+          >
             <LinkedinOutlined />
           </a>
         </div>
-        <div className="text-center text-xs m-2">
-          <h3>2023 © Tunde Olumoh.</h3>
-          <h3>All Right Reserved.</h3>
+
+        <div className="mt-4 text-center text-xs uppercase tracking-[0.2em] text-gray-400">
+          <p>2026 Tunde Olumoh</p>
+          <p className="mt-1">All rights reserved</p>
         </div>
       </div>
-    </div>
+    </aside>
   );
 };
 

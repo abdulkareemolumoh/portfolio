@@ -11,8 +11,8 @@ const featuredProjects = [
     role: "Full-stack product engineering, backend architecture, and frontend MVP delivery.",
     impact: "40% faster quote turnaround and a 25% lift in first-time customer conversion during pilot rollout.",
     stack: ["Next.js", "Tailwind CSS", "NestJS", "PostgreSQL", "Prisma"],
-    href: "#",
-    cta: "Case study coming soon",
+    href: "https://mech-link-web.vercel.app/",
+    cta: "View site",
     featured: true,
   },
   {
