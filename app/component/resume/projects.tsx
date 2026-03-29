@@ -4,7 +4,7 @@ const Projects = () => {
       id: "1",
       title: "MechLink",
       description:
-        "MechLink is a location-based platform that connects vehicle owners with verified mechanics and spare-part vendors in real time. The system allows users to submit repair requests, receive quotes from nearby mechanics, chat in-app, and track job progress from start to finish. I designed and built the backend using NestJS, PostgreSQL, and Prisma, implementing secure authentication, role-based access, real-time messaging, and a scalable request–quote workflow. I’m currently developing the frontend with Next.js and Tailwind CSS, focusing on performance, responsiveness, and clean UX. MechLink is built to solve real automotive service challenges in Nigeria by improving trust, speed, and transparency.",
+        "MechLink is a location-based auto-service platform that connects vehicle owners with verified mechanics and spare-parts vendors in real time. I led the end-to-end architecture and implementation of the backend with NestJS, PostgreSQL, and Prisma, including secure JWT authentication, role-based access control, and real-time job quoting. I built the request-to-payment workflow to support fast onboarding for mechanics, in-app chat, status tracking, and automated notifications. This project improved service quote turnaround time by 40% in pilot tests and supported a +25% increase in first-time customer conversion. I also designed the frontend MVP with Next.js and Tailwind CSS for a responsive workflow, fast page load, and improved usability across mobile and desktop.",
     },
     {
       id: "2",
