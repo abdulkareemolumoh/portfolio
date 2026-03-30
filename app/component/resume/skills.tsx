@@ -8,19 +8,19 @@ interface SkillProps {
 
 const Skills: React.FC<SkillProps> = ({ label, percent }) => {
   return (
-    <div className="grid grid-cols-12 mb-2 w-fit gap-4 ">
-      <div className="col-span-4">
-        <h1>{label}:</h1>
+    <div className="space-y-2">
+      <div className="flex items-center justify-between gap-3">
+        <h3 className="text-sm font-medium text-gray-200 sm:text-base">{label}</h3>
+        <span className="text-sm font-semibold text-green-300">{percent}%</span>
       </div>
-      <div className="col-span-8 ">
-        <Progress
-          percent={percent}
-          size={[250, 20]}
-          status="active"
-          strokeColor="rgb(34 197 94)"
-          showInfo={false}
-        />
-      </div>
+      <Progress
+        percent={percent}
+        size={["100%", 14]}
+        status="active"
+        strokeColor="rgb(34 197 94)"
+        trailColor="rgba(255,255,255,0.08)"
+        showInfo={false}
+      />
     </div>
   );
 };

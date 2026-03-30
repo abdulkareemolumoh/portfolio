@@ -74,15 +74,22 @@ const featuredProjects = [
 
 const Portfolio = () => {
   return (
-    <div className="m-4 sm:m-8">
-      <div className="flex justify-between items-baseline border-b-4 border-dotted border-green-500 text-3xl font-bold text-green-500 mb-4">
-        <h1>Portfolio</h1>
+    <div className="space-y-8 sm:space-y-10">
+      <div className="flex flex-wrap items-end justify-between gap-4 border-b-2 border-dotted border-green-500/70 pb-4 text-green-500">
+        <div>
+          <p className="text-sm uppercase tracking-[0.28em] text-green-300">
+            Selected Work
+          </p>
+          <h1 className="mt-2 text-3xl font-bold text-white sm:text-4xl">
+            Portfolio
+          </h1>
+        </div>
         <DatabaseOutlined />
       </div>
 
       <div className="grid gap-6 lg:grid-cols-[1.4fr_0.8fr] lg:items-start">
-        <div className="rounded-2xl border border-green-500/50 bg-black/20 p-5 shadow-lg shadow-black/20 sm:p-6">
-          <p className="text-lg leading-relaxed text-gray-200">
+        <div className="rounded-3xl border border-green-500/40 bg-black/25 p-5 shadow-lg shadow-black/20 backdrop-blur-sm sm:p-7">
+          <p className="max-w-3xl text-base leading-relaxed text-gray-200 sm:text-lg">
             A curated selection of products I have built across marketplaces,
             service platforms, and interactive web experiences. Each project is
             shaped by a mix of product thinking, frontend polish, and reliable
@@ -91,7 +98,7 @@ const Portfolio = () => {
         </div>
 
         <div className="grid gap-4 sm:grid-cols-3 lg:grid-cols-1">
-          <div className="rounded-2xl border border-green-500/40 bg-gray-900/70 p-4">
+          <div className="rounded-2xl border border-green-500/30 bg-gray-900/65 p-4 backdrop-blur-sm">
             <p className="text-sm uppercase tracking-[0.2em] text-green-400">
               Projects
             </p>
@@ -99,7 +106,7 @@ const Portfolio = () => {
               {featuredProjects.length}
             </p>
           </div>
-          <div className="rounded-2xl border border-green-500/40 bg-gray-900/70 p-4">
+          <div className="rounded-2xl border border-green-500/30 bg-gray-900/65 p-4 backdrop-blur-sm">
             <p className="text-sm uppercase tracking-[0.2em] text-green-400">
               Focus
             </p>
@@ -107,7 +114,7 @@ const Portfolio = () => {
               Full-stack products with strong UX execution
             </p>
           </div>
-          <div className="rounded-2xl border border-green-500/40 bg-gray-900/70 p-4">
+          <div className="rounded-2xl border border-green-500/30 bg-gray-900/65 p-4 backdrop-blur-sm">
             <p className="text-sm uppercase tracking-[0.2em] text-green-400">
               Strength
             </p>
@@ -118,19 +125,19 @@ const Portfolio = () => {
         </div>
       </div>
 
-      <div className="mt-8 grid grid-cols-1 gap-6 xl:grid-cols-2">
+      <div className="grid grid-cols-1 gap-6 xl:grid-cols-2">
         {featuredProjects.map((project) => (
           <article
             key={project.title}
-            className={`overflow-hidden rounded-2xl border p-5 shadow-xl shadow-black/20 transition duration-300 hover:-translate-y-1 hover:border-green-400 hover:shadow-2xl ${
+            className={`overflow-hidden rounded-3xl border p-5 shadow-xl shadow-black/20 transition duration-300 hover:-translate-y-1 hover:border-green-400 hover:shadow-2xl sm:p-6 ${
               project.featured
-                ? "border-green-500 bg-gradient-to-br from-green-950/40 via-gray-900 to-gray-950 xl:col-span-2"
-                : "border-green-500/40 bg-gray-900/70"
+                ? "border-green-500 bg-gradient-to-br from-green-950/40 via-gray-900/95 to-gray-950 xl:col-span-2"
+                : "border-green-500/30 bg-gray-900/70"
             }`}
           >
             <div
               className={`grid gap-6 ${
-                project.featured ? "lg:grid-cols-[1.1fr_1fr]" : ""
+                project.featured ? "lg:grid-cols-[1.08fr_1fr] lg:gap-8" : ""
               }`}
             >
               <div>
@@ -140,14 +147,18 @@ const Portfolio = () => {
                     alt={project.title}
                     width={900}
                     height={520}
-                    className="h-56 w-full object-cover"
+                    className={`w-full object-cover ${
+                      project.featured
+                        ? "h-60 sm:h-72 lg:h-full lg:min-h-[22rem]"
+                        : "h-56 sm:h-64"
+                    }`}
                   />
                 </div>
               </div>
 
               <div className="flex h-full flex-col">
-                <div className="flex items-center justify-between gap-3">
-                  <h2 className="text-2xl font-bold text-white">
+                <div className="flex flex-wrap items-center justify-between gap-3">
+                  <h2 className="text-2xl font-bold text-white sm:text-[1.75rem]">
                     {project.title}
                   </h2>
                   {project.featured ? (
@@ -205,7 +216,7 @@ const Portfolio = () => {
                         ? "noopener noreferrer"
                         : undefined
                     }
-                    className="inline-flex items-center justify-center rounded-lg border border-green-500 px-4 py-2 text-sm font-semibold text-green-200 transition hover:bg-green-500/10"
+                    className="inline-flex min-h-[44px] items-center justify-center rounded-xl border border-green-500 px-4 py-2 text-sm font-semibold text-green-200 transition hover:bg-green-500/10"
                   >
                     {project.cta}
                   </a>

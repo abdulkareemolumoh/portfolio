@@ -3,151 +3,166 @@ import Image from "next/image";
 import { Services, Testimonials } from "../component/about_me";
 import React from "react";
 
+const personalInfo = [
+  { label: "Name", value: "Tunde Olumoh" },
+  { label: "Residence", value: "Nigeria" },
+  { label: "Email", value: "tundeolumoh@gmail.com" },
+  { label: "Phone", value: "+234 809 138 1136" },
+  { label: "Open to work", value: "Available", accent: true },
+];
+
+const aboutSections = [
+  {
+    title: "Full-stack engineer",
+    paragraphs: [
+      "I am a full-stack developer passionate about building scalable, user-focused, and modern digital products. I enjoy turning ideas into reliable applications that feel polished on the surface and solid underneath.",
+      "On the frontend, I work with React, Next.js, React Native, Tailwind CSS, and TypeScript to create responsive interfaces that are fast, intuitive, and accessible. On the backend, I build APIs and business workflows with NestJS, Prisma, and PostgreSQL to support dependable end-to-end experiences.",
+      "I thrive on solving real-world problems, whether that means architecting backend systems, integrating external services, or refining UI details that make a product easier and more enjoyable to use.",
+    ],
+  },
+  {
+    title: "Expertise",
+    paragraphs: [
+      "End-to-end development: I am comfortable owning the full software lifecycle, from database design and API architecture to frontend implementation and deployment.",
+      "User-centric delivery: I build with the end user in mind, focusing on clarity, speed, and smooth interaction across screen sizes.",
+      "Problem-solving and innovation: I approach product and engineering challenges with curiosity, structure, and a bias toward clean, practical solutions.",
+    ],
+  },
+  {
+    title: "Technical proficiency",
+    paragraphs: [
+      "Languages: JavaScript, TypeScript, HTML, and CSS, with an emphasis on maintainable and scalable code.",
+      "Frameworks and tools: React, Next.js, React Native, Tailwind CSS, NestJS, Prisma, PostgreSQL, Git, CI/CD workflows, and cloud deployment tooling.",
+    ],
+  },
+  {
+    title: "Commitment to quality",
+    paragraphs: [
+      "Attention to detail: I care deeply about code quality, performance, accessibility, and the overall finish of the product.",
+      "Continuous growth: I actively explore emerging technologies, refine my craft, and look for better ways to ship useful software.",
+    ],
+  },
+];
+
 const About = () => {
   return (
-    <div className="m-4 sm:m-8 ">
-      <div className="flex justify-between items-baseline font-bold text-3xl border-b-4 border-dotted text-green-500 border-green-500 mb-4">
-        <h1>About Me</h1>
+    <div className="space-y-10 sm:space-y-12">
+      <div className="flex flex-wrap items-end justify-between gap-4 border-b-2 border-dotted border-green-500/70 pb-4 text-green-500">
+        <div>
+          <p className="text-sm uppercase tracking-[0.28em] text-green-300">
+            Profile
+          </p>
+          <h1 className="mt-2 text-3xl font-bold text-white sm:text-4xl">
+            About Me
+          </h1>
+        </div>
         <UserOutlined />
       </div>
-      <div className="flex flex-col lg:grid grid-cols-8 gap-4 lg:gap-8 ">
-        <div className="col-span-5 text-justify ">
-          <h1 className="my-4 font-bold text-2xl">Fullstack Engineer</h1>
-          <p className="text-xl p-2">
-            I’m a <span className="font-semibold">Fullstack Developer</span>{" "}
-            passionate about building scalable, user-focused, and modern digital
-            solutions. With hands-on experience in both frontend and backend
-            technologies, I specialize in turning ideas into production-ready
-            applications that are efficient, reliable, and delightful to use.
-          </p>
-          <p className="text-xl p-2">
-            On the frontend, I craft intuitive and responsive user interfaces
-            with
-            <span className="font-semibold">
-              {" "}
-              React, Next.js, React Native, Tailwind CSS, and TypeScript
-            </span>
-            . On the backend, I design and implement robust APIs, database
-            schemas, and business logic using
-            <span className="font-semibold">
-              {" "}
-              NestJS, Prisma, and PostgreSQL
-            </span>
-            . This combination allows me to deliver seamless end-to-end
-            experiences across web and mobile platforms.
-          </p>
-          <p className="text-xl p-2">
-            I thrive on solving real-world challenges—whether it’s architecting
-            a scalable backend, integrating APIs, or refining UI/UX for
-            performance and accessibility. Every project I take on is approached
-            with a balance of technical excellence and user-centric design.
-          </p>
-          <p className="text-xl p-2">
-            Beyond coding, I’m dedicated to continuous growth, collaboration,
-            and exploring emerging technologies to stay ahead in a fast-moving
-            industry.
-          </p>
 
-          <h1 className="my-4 font-bold text-2xl">Expertise</h1>
-          <p className="text-xl p-2">
-            <span className="font-semibold">End-to-End Development:</span>
-            Skilled in managing the full software lifecycle—from database design
-            and API development to frontend implementation and deployment.
-          </p>
-          <p className="text-xl p-2">
-            <span className="font-semibold">User-Centric Approach:</span>I build
-            with the end-user in mind, ensuring clean interfaces, smooth
-            navigation, and engaging interactions across all devices.
-          </p>
-          <p className="text-xl p-2">
-            <span className="font-semibold">Problem-Solving & Innovation:</span>
-            I tackle challenges with creativity and precision, consistently
-            delivering solutions that exceed expectations.
-          </p>
+      <div className="grid gap-6 xl:grid-cols-[minmax(0,1.35fr)_minmax(320px,0.8fr)]">
+        <div className="space-y-6 rounded-3xl border border-green-500/35 bg-black/25 p-5 shadow-xl shadow-black/20 backdrop-blur-sm sm:p-8">
+          <div className="rounded-2xl border border-green-500/20 bg-gradient-to-br from-green-500/10 to-transparent p-5 sm:p-6">
+            <p className="text-sm uppercase tracking-[0.24em] text-green-300">
+              What I bring
+            </p>
+            <p className="mt-3 max-w-3xl text-base leading-relaxed text-gray-200 sm:text-lg">
+              I bridge product thinking, frontend polish, and backend delivery to
+              create experiences that are both elegant for users and dependable
+              for teams.
+            </p>
+          </div>
 
-          <h1 className="my-4 font-bold text-2xl">Technical Proficiency</h1>
-          <p className="text-xl p-2">
-            <span className="font-semibold">Languages:</span>
-            Proficient in JavaScript, TypeScript, HTML, and CSS. Experienced in
-            writing clean, maintainable, and scalable code.
-          </p>
-          <p className="text-xl p-2">
-            <span className="font-semibold">Frameworks & Tools:</span>
-            React, Next.js, React Native, Tailwind CSS, NestJS, Prisma, and
-            PostgreSQL. Familiar with Git, CI/CD, and cloud-based deployments.
-          </p>
+          {aboutSections.map((section) => (
+            <section key={section.title} className="space-y-4">
+              <h2 className="text-2xl font-bold text-white">{section.title}</h2>
+              <div className="space-y-3 text-base leading-relaxed text-gray-200 sm:text-lg">
+                {section.paragraphs.map((paragraph) => (
+                  <p key={paragraph}>{paragraph}</p>
+                ))}
+              </div>
+            </section>
+          ))}
 
-          <h1 className="my-4 font-bold text-2xl">Commitment to Quality</h1>
-          <p className="text-xl p-2">
-            <span className="font-semibold">Attention to Detail:</span>
-            From clean code to optimized performance, I focus on delivering
-            polished products that are both functional and reliable.
-          </p>
-          <p className="text-xl p-2">
-            <span className="font-semibold">Continuous Growth:</span>I embrace
-            learning as a lifelong process, constantly exploring emerging
-            technologies and refining my craft.
-          </p>
-
-          <h1 className="my-4 font-bold text-2xl">Let&apos;s Collaborate</h1>
-          <p className="text-xl p-2">
-            If you&apos;re looking for a developer who can bridge the gap
-            between frontend and backend, and deliver impactful digital
-            experiences, let&apos;s connect. I’m open to new opportunities,
-            collaborations, and exciting projects that push boundaries.
-          </p>
-          <Image
-            src={"/images/signature.png"}
-            width={350}
-            height={350}
-            style={{
-              width: "auto",
-              height: "auto",
-            }}
-            alt="sign"
-            className="flex mx-auto"
-          />
+          <section className="space-y-4 rounded-2xl border border-green-500/20 bg-gray-950/60 p-5">
+            <h2 className="text-2xl font-bold text-white">Let&apos;s collaborate</h2>
+            <p className="text-base leading-relaxed text-gray-200 sm:text-lg">
+              If you need someone who can move across frontend and backend while
+              keeping user experience in focus, I am open to opportunities,
+              collaborations, and ambitious product work.
+            </p>
+            <Image
+              src={"/images/signature.png"}
+              width={350}
+              height={160}
+              alt="Tunde Olumoh signature"
+              className="h-auto w-44 sm:w-56"
+            />
+          </section>
         </div>
 
-        <div className="col-span-3 p-4 sm:p-6 rounded-lg shadow-md">
-          <h3 className="my-4 font-bold text-xl sm:text-2xl ">
-            Personal Information
-          </h3>
-          <ul className="text-lg sm:text-xl space-y-4">
-            <li className="flex flex-col sm:flex-row sm:justify-between">
-              <span className="font-semibold">Name:</span>
-              <span>Tunde Olumoh</span>
-            </li>
-            <li className="flex flex-col sm:flex-row sm:justify-between">
-              <span className="font-semibold">Residence:</span>
-              <span>Nigeria</span>
-            </li>
-            <li className="flex flex-col sm:flex-row sm:justify-between">
-              <span className="font-semibold">Email:</span>
-              <span>tundeolumoh@gmail.com</span>
-            </li>
-            <li className="flex flex-col sm:flex-row sm:justify-between">
-              <span className="font-semibold">Phone:</span>
-              <span>(+234)-809-113-81136</span>
-            </li>
-            <li className="flex flex-col sm:flex-row sm:justify-between">
-              <span className="font-semibold">Open to work:</span>
-              <span className="text-green-600 font-medium">Available</span>
-            </li>
-          </ul>
-          <div className="mt-6 flex justify-center">
+        <aside className="space-y-6">
+          <div className="rounded-3xl border border-green-500/35 bg-gray-950/70 p-5 shadow-xl shadow-black/20 backdrop-blur-sm sm:p-6">
+            <h2 className="text-2xl font-bold text-white">Personal Information</h2>
+            <ul className="mt-6 space-y-4">
+              {personalInfo.map((item) => (
+                <li
+                  key={item.label}
+                  className="rounded-2xl border border-white/10 bg-white/[0.03] px-4 py-4"
+                >
+                  <p className="text-xs font-semibold uppercase tracking-[0.2em] text-green-400">
+                    {item.label}
+                  </p>
+                  <p
+                    className={`mt-2 text-base font-medium sm:text-lg ${
+                      item.accent ? "text-green-300" : "text-white"
+                    }`}
+                  >
+                    {item.value}
+                  </p>
+                </li>
+              ))}
+            </ul>
+
             <a
               href="/resume/Tunde_Olumoh_Resume_FE.pdf"
               download="Tunde_Olumoh.pdf"
               target="_blank"
-              className="inline-flex items-center border-4 border-green-500 text-green-500 font-bold text-lg lg:text-xl px-4 py-2 lg:px-6 lg:py-3 rounded-lg hover:scale-105 transition-transform"
+              rel="noopener noreferrer"
+              className="mt-6 inline-flex min-h-[48px] w-full items-center justify-center rounded-2xl border border-green-500 bg-green-500/10 px-5 py-3 text-sm font-semibold uppercase tracking-[0.16em] text-green-200 transition hover:bg-green-500/20"
             >
-              DOWNLOAD RESUME
+              Download Resume
               <DownloadOutlined className="ml-2" />
             </a>
           </div>
-        </div>
+
+          <div className="rounded-3xl border border-green-500/25 bg-black/25 p-5 backdrop-blur-sm sm:p-6">
+            <p className="text-sm uppercase tracking-[0.24em] text-green-300">
+              Working style
+            </p>
+            <div className="mt-4 grid gap-3 sm:grid-cols-3 xl:grid-cols-1">
+              <div className="rounded-2xl border border-white/10 bg-white/[0.03] p-4">
+                <p className="text-2xl font-bold text-white">5+</p>
+                <p className="mt-1 text-sm text-gray-300">
+                  Production projects shipped across web and mobile
+                </p>
+              </div>
+              <div className="rounded-2xl border border-white/10 bg-white/[0.03] p-4">
+                <p className="text-2xl font-bold text-white">Full stack</p>
+                <p className="mt-1 text-sm text-gray-300">
+                  Frontend UX execution backed by API and data design
+                </p>
+              </div>
+              <div className="rounded-2xl border border-white/10 bg-white/[0.03] p-4">
+                <p className="text-2xl font-bold text-white">Remote-ready</p>
+                <p className="mt-1 text-sm text-gray-300">
+                  Clear communication, ownership, and fast iteration
+                </p>
+              </div>
+            </div>
+          </div>
+        </aside>
       </div>
+
       <Services />
       <Testimonials />
     </div>

@@ -7,62 +7,69 @@ import {
   CloudServerOutlined,
 } from "../antd";
 
+const services = [
+  {
+    icon: LaptopOutlined,
+    title: "Web Development",
+    description:
+      "I build robust, scalable applications from polished frontend interfaces to backend services that support real product growth.",
+  },
+  {
+    icon: DatabaseOutlined,
+    title: "Backend Development",
+    description:
+      "I design APIs, databases, and business workflows that prioritize security, maintainability, and performance.",
+  },
+  {
+    icon: CloudServerOutlined,
+    title: "Cloud & Deployment",
+    description:
+      "I ship applications with deployment pipelines, operational awareness, and a focus on stability in production.",
+  },
+  {
+    icon: EyeOutlined,
+    title: "UI/UX Design",
+    description:
+      "I shape interfaces that feel clear, intentional, and easy to use without sacrificing visual polish.",
+  },
+  {
+    icon: MobileOutlined,
+    title: "Responsive Systems",
+    description:
+      "I make sure experiences adapt gracefully across desktop, tablet, and mobile with thoughtful interaction patterns.",
+  },
+];
+
 const Services = () => {
-  const services = [
-    {
-      icon: LaptopOutlined,
-      title: "Web Development",
-      description:
-        "I develop robust, scalable, and high-performance applications — from frontend interfaces to backend APIs.",
-    },
-    {
-      icon: DatabaseOutlined,
-      title: "Backend Development",
-      description:
-        "Designing and implementing secure databases, RESTful APIs, and server-side logic with modern frameworks.",
-    },
-    {
-      icon: CloudServerOutlined,
-      title: "Cloud & Deployment",
-      description:
-        "Deploying and managing applications on cloud platforms with CI/CD pipelines, containerization, and monitoring.",
-    },
-    {
-      icon: EyeOutlined,
-      title: "Web Design",
-      description:
-        "Crafting intuitive and visually appealing interfaces that enhance user experience and engagement.",
-    },
-    {
-      icon: MobileOutlined,
-      title: "Responsive Design",
-      description:
-        "Ensuring seamless functionality across all devices, from desktops to smartphones.",
-    },
-  ];
-
   return (
-    <section className="py-16">
-      <h2 className="text-center text-3xl md:text-4xl font-bold mb-12">
-        <span className="underline decoration-green-500 underline-offset-8">
-          Services
-        </span>
-      </h2>
+    <section className="space-y-6 rounded-3xl border border-green-500/35 bg-black/25 p-5 shadow-xl shadow-black/20 backdrop-blur-sm sm:p-8">
+      <div className="flex flex-wrap items-end justify-between gap-4 border-b border-white/10 pb-4">
+        <div>
+          <p className="text-sm uppercase tracking-[0.24em] text-green-300">
+            Capabilities
+          </p>
+          <h2 className="mt-2 text-3xl font-bold text-white">Services</h2>
+        </div>
+        <p className="max-w-xl text-sm leading-relaxed text-gray-300 sm:text-base">
+          The work I enjoy most sits at the intersection of product clarity,
+          engineering depth, and smooth user experience.
+        </p>
+      </div>
 
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10 px-6 md:px-12">
-        {services.map(({ icon: Icon, title, description }, index) => (
-          <div
-            key={index}
-            className="flex flex-col items-center text-center shadow-md rounded-2xl p-8  hover:shadow-xl transition-shadow duration-300 hover:border-green-500 hover:border-2"
+      <div className="grid gap-4 sm:grid-cols-2 xl:grid-cols-3">
+        {services.map(({ icon: Icon, title, description }) => (
+          <article
+            key={title}
+            className="rounded-2xl border border-green-500/25 bg-gray-950/65 p-5 transition duration-300 hover:-translate-y-1 hover:border-green-400 hover:bg-gray-950/80"
           >
-            <Icon
-              className="text-6xl mb-6"
-              style={{ color: "rgb(34 197 94)" }}
-              aria-label={`${title} Icon`}
-            />
-            <h3 className="text-xl font-semibold mb-3">{title}</h3>
-            <p className="">{description}</p>
-          </div>
+            <div className="flex h-12 w-12 items-center justify-center rounded-2xl bg-green-500/10 text-2xl text-green-300">
+              <Icon aria-label={`${title} icon`} />
+            </div>
+            <h3 className="mt-5 text-xl font-semibold text-white">{title}</h3>
+            <p className="mt-3 text-sm leading-relaxed text-gray-300 sm:text-base">
+              {description}
+            </p>
+          </article>
         ))}
       </div>
     </section>

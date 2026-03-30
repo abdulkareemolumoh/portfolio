@@ -1,4 +1,3 @@
-const Education = () => {
 const educationDetails = [
   {
     id: "1",
@@ -13,7 +12,7 @@ const educationDetails = [
       "Cloudinary",
       "Firebase",
       "TypeScript",
-      "TailwindCSS",
+      "Tailwind CSS",
     ],
   },
   {
@@ -24,7 +23,7 @@ const educationDetails = [
       "Advanced React",
       "Front-End Developer Capstone",
       "Introduction to Front-End Development",
-      "Version Control (Git & GitHub)",
+      "Version Control",
       "Coding Interview Preparation",
       "React Basics",
       "Principles of UX/UI Design",
@@ -52,29 +51,44 @@ const educationDetails = [
   {
     id: "5",
     institution: "Federal University of Technology, Minna",
-    program: "B.Eng. Civil Engineering – Second Class Upper (2016)",
+    program: "B.Eng. Civil Engineering - Second Class Upper (2016)",
     courses: [],
   },
 ];
 
+const Education = () => {
+  return (
+    <div className="space-y-4">
+      {educationDetails.map((edu) => (
+        <article
+          key={edu.id}
+          className="rounded-2xl border border-green-500/25 bg-gray-950/60 p-5"
+        >
+          <div className="border-l-2 border-green-400 pl-4">
+            <p className="text-sm uppercase tracking-[0.16em] text-green-300">
+              {edu.institution}
+            </p>
+            <h3 className="mt-2 text-lg font-semibold text-white sm:text-xl">
+              {edu.program}
+            </h3>
+          </div>
 
-  const education = educationDetails.map((edu) => (
-    <div
-      className="border-l-4 border-green-500 p-4 m-4 lg:p-8 lg:m-8"
-      key={edu.id}
-    >
-      <h1 className="text-xl font-semibold ">{edu.institution}</h1>
-      <h2 className="">{edu.program}</h2>
-      <h2>
-        {edu.courses.map((cousrse, index) => (
-          <button className="p-2 bg-green-500 rounded-xl m-2" key={index}>
-            {cousrse}
-          </button>
-        ))}
-      </h2>
+          {edu.courses.length ? (
+            <div className="mt-4 flex flex-wrap gap-2">
+              {edu.courses.map((course) => (
+                <span
+                  className="rounded-full border border-green-500/30 bg-green-500/10 px-3 py-1 text-sm text-green-100"
+                  key={course}
+                >
+                  {course}
+                </span>
+              ))}
+            </div>
+          ) : null}
+        </article>
+      ))}
     </div>
-  ));
-  return <div>{education}</div>;
+  );
 };
 
 export default Education;

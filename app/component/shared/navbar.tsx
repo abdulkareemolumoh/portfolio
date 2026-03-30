@@ -34,12 +34,12 @@ const Navbar = ({ mobile = false, onNavigate }: NavbarProps) => {
     <aside
       className={`flex h-full flex-col justify-between overflow-y-auto border-r border-green-500/30 bg-gradient-to-b from-black via-gray-950 to-black text-white ${
         mobile
-          ? "fixed inset-y-0 left-0 z-30 h-screen w-[82%] max-w-sm shadow-2xl shadow-black/60"
+          ? "fixed inset-y-0 left-0 z-30 h-screen w-[84%] max-w-sm border-r border-white/10 shadow-2xl shadow-black/60"
           : "w-full"
       }`}
     >
       <div>
-        <div className="border-b border-green-500/20 p-5">
+        <div className="border-b border-green-500/20 p-5 sm:p-6">
           <div className="relative overflow-hidden rounded-2xl border border-green-500/30">
             <Image
               src={"/images/passport.jpg"}
@@ -66,7 +66,7 @@ const Navbar = ({ mobile = false, onNavigate }: NavbarProps) => {
           </div>
         </div>
 
-        <nav className="px-4 py-5">
+        <nav className="px-4 py-5 sm:px-5">
           <ul className="space-y-2">
             {navItems.map((item) => {
               const Icon = item.icon;
@@ -101,7 +101,7 @@ const Navbar = ({ mobile = false, onNavigate }: NavbarProps) => {
         </nav>
       </div>
 
-      <div className="border-t border-green-500/20 p-5">
+      <div className="border-t border-green-500/20 p-5 sm:p-6">
         <div className="flex items-center justify-between gap-3">
           <a
             href="https://github.com/abdulkareemolumoh"
