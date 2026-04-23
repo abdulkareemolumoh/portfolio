@@ -40,12 +40,14 @@ const TopNavbar = () => {
     <div>
       <div className="fixed inset-x-0 top-0 z-40 border-b border-white/10 bg-black/75 px-4 py-4 text-green-400 shadow-lg shadow-black/20 backdrop-blur-xl">
         <div className="mx-auto flex w-full max-w-7xl items-center justify-between gap-4">
-          <p className="text-xs uppercase tracking-[0.25em] text-green-300">
-            Portfolio
-          </p>
-          <h1 className="text-sm font-bold tracking-wide text-white">
-            Tunde Abdulkareem Olumoh
-          </h1>
+          <div className="flex flex-col">
+            <p className="text-xs uppercase tracking-[0.25em] text-green-300">
+              Portfolio
+            </p>
+            <h1 className="text-sm font-bold tracking-wide text-white">
+              Tunde Abdulkareem Olumoh
+            </h1>
+          </div>
           <button
             onClick={toggleSwitch}
             aria-label="Toggle navigation menu"

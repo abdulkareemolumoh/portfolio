@@ -43,9 +43,9 @@ const Navbar = ({ mobile = false, onNavigate }: NavbarProps) => {
           <div className="relative overflow-hidden rounded-2xl border border-green-500/30">
             <Image
               src={"/images/passport.jpg"}
-              width={1000}
-              height={1000}
-              className="h-64 w-full object-cover"
+              width={600}
+              height={600}
+              className="h-66 w-full object-cover mt-16 md:mt-0 rounded-2xl"
               alt="profile_img"
               priority
             />
