@@ -7,9 +7,18 @@ const featuredProjects = [
     title: "MechLink",
     image: "/images/MechLink.png",
     summary:
-      "Location-based service marketplace connecting vehicle owners with trusted mechanics through quoting, chat, and job tracking.",
+      "A local auto-service marketplace designed to reduce friction between vehicle owners and trusted mechanics.",
+    problem:
+      "Vehicle owners struggled to find reliable mechanics, compare quotes, and track jobs in a single workflow.",
+    architecture:
+      "Built as a location-aware marketplace with a NestJS API, PostgreSQL database, Prisma ORM, and Next.js frontend for fast delivery and future scale.",
+    challenges:
+      "Balancing trust, realtime communication, and a pilot-ready quoting flow while keeping the experience mobile-first.",
+    techRationale:
+      "Next.js and Tailwind enabled rapid UI iteration, NestJS provided structured backend services, and PostgreSQL + Prisma kept data consistency and developer velocity high.",
     role: "Full-stack product engineering, backend architecture, and frontend MVP delivery.",
-    impact: "40% faster quote turnaround and a 25% lift in first-time customer conversion during pilot rollout.",
+    impact:
+      "Delivered 40% faster quote turnaround and a 25% lift in first-time customer conversion during pilot rollout.",
     stack: ["Next.js", "Tailwind CSS", "NestJS", "PostgreSQL", "Prisma"],
     href: "https://mechlink.com.ng/",
     cta: "View site",
@@ -19,9 +28,18 @@ const featuredProjects = [
     title: "CarTrims",
     image: "/images/cartrims.png",
     summary:
-      "Vehicle marketplace built for buying, selling, and bidding with wallet funding and verified listings.",
+      "A vehicle marketplace engineered to support listings, wallet-backed bidding, and verified seller trust signals.",
+    problem:
+      "Buyers and sellers needed a clearer marketplace path with trust, fast discovery, and secure bidding.",
+    architecture:
+      "Responsive marketplace frontend with structured product and bidding flows, designed for both web and cross-platform expansion.",
+    challenges:
+      "Keeping bid workflows intuitive on mobile while maintaining clear product detail and trust indicators.",
+    techRationale:
+      "Next.js and TypeScript ensured a robust web experience, Tailwind delivered consistent design, and React Native poised the product for mobile reach.",
     role: "Frontend implementation across responsive web experiences and product UX improvements.",
-    impact: "Helped deliver a smoother browsing and bidding flow for a high-growth marketplace experience.",
+    impact:
+      "Helped deliver a smoother browsing and bidding flow for a high-growth marketplace experience.",
     stack: ["Next.js", "TypeScript", "Tailwind CSS", "React Native"],
     href: "https://carstrims.com/",
     cta: "View site",
@@ -30,9 +48,18 @@ const featuredProjects = [
     title: "TrendEcho",
     image: "/images/trendecho.jpg",
     summary:
-      "Fast and lightweight news reader designed around clarity, accessibility, and frictionless reading.",
+      "A news reader focused on performance, readability, and distraction-free consumption.",
+    problem:
+      "Existing news apps were cluttered and slow, making it hard for readers to stay focused across devices.",
+    architecture:
+      "Simple content-first layout with optimized rendering and accessible typography for fast reading sessions.",
+    challenges:
+      "Designing a flexible experience that felt polished on small phones and large screens without sacrificing speed.",
+    techRationale:
+      "Next.js provided fast page loads, and Tailwind allowed rapid styling with consistent responsive behavior.",
     role: "Frontend development with emphasis on responsive layout and content readability.",
-    impact: "Improved reading comfort across mobile and desktop through a simple, high-speed interface.",
+    impact:
+      "Improved reading comfort across mobile and desktop through a simple, high-speed interface.",
     stack: ["Next.js", "Tailwind CSS", "Responsive UI"],
     href: "https://trendecho.vercel.app/",
     cta: "View site",
@@ -41,9 +68,18 @@ const featuredProjects = [
     title: "VanLife",
     image: "/images/vanlife.jpg",
     summary:
-      "Van rental app focused on intuitive search, booking flow clarity, and a clean browsing experience.",
+      "A rental experience that simplifies search and booking for users exploring vehicles.",
+    problem:
+      "Travelers needed a low-friction way to compare availability and book rentals without overwhelming details.",
+    architecture:
+      "Reusable component-driven UI with clear search and booking states to support quick decision-making.",
+    challenges:
+      "Reducing cognitive load in the booking flow while preserving necessary rental details.",
+    techRationale:
+      "React delivered the right interactive foundation, and component reuse sped up delivery of consistent UI patterns.",
     role: "Frontend build with reusable components and simplified booking interactions.",
-    impact: "Created a streamlined rental journey that keeps users focused on availability and selection.",
+    impact:
+      "Created a streamlined rental journey that keeps users focused on availability and selection.",
     stack: ["React", "CSS", "Routing", "Reusable Components"],
     href: "https://vanslifeapp.netlify.app/",
     cta: "View site",
@@ -52,9 +88,18 @@ const featuredProjects = [
     title: "Tenzies",
     image: "/images/Tenzies.jpg",
     summary:
-      "Interactive dice game showcasing state management, responsive feedback, and polished play loops.",
+      "An interactive product prototype built to illustrate state-driven gameplay and polished feedback loops.",
+    problem:
+      "The goal was to prove a fun, reactive interface that responds immediately to player decisions.",
+    architecture:
+      "A compact React app centered on clear state transitions, component-driven UI, and instant feedback.",
+    challenges:
+      "Delivering a satisfying gameplay rhythm while keeping the interaction model easy to follow.",
+    techRationale:
+      "React made state management predictable and allowed the interface to stay responsive under frequent updates.",
     role: "Frontend development centered on game state, component interaction, and UI responsiveness.",
-    impact: "Demonstrated clean component design and engaging moment-to-moment interaction patterns.",
+    impact:
+      "Demonstrated clean component design and engaging moment-to-moment interaction patterns.",
     stack: ["React", "JavaScript", "State Management", "UX Polish"],
     href: "https://tenziiesgame.netlify.app/",
     cta: "View site",
@@ -63,9 +108,18 @@ const featuredProjects = [
     title: "Quizzcal",
     image: "/images/quizzcal.jpg",
     summary:
-      "Interactive quiz experience with persistent user progress and focused practice sessions.",
+      "A quiz platform built for repeat practice with saved progress and clear answer review.",
+    problem:
+      "Learners needed a way to complete practice sessions and return later without losing progress.",
+    architecture:
+      "Interactive quiz flow with persistent state, progress tracking, and immediate answer feedback.",
+    challenges:
+      "Balancing quick practice cycles with reliable state persistence and a focused review experience.",
+    techRationale:
+      "Firebase made persistence simple, React handled the interactive flow, and Tailwind kept the UI approachable.",
     role: "Frontend development with attention to persistence, user flow, and interactive feedback.",
-    impact: "Supported repeat practice sessions through saved progress and clear answer-driven interactions.",
+    impact:
+      "Supported repeat practice sessions through saved progress and clear answer-driven interactions.",
     stack: ["React", "Firebase", "Tailwind CSS", "User Persistence"],
     href: "https://quizzcalapp.netlify.app/",
     cta: "View site",
@@ -90,10 +144,9 @@ const Portfolio = () => {
       <div className="grid gap-6 lg:grid-cols-[1.4fr_0.8fr] lg:items-start">
         <div className="rounded-3xl border border-green-500/40 bg-black/25 p-5 shadow-lg shadow-black/20 backdrop-blur-sm sm:p-7">
           <p className="max-w-3xl text-base leading-relaxed text-gray-200 sm:text-lg">
-            A curated selection of products I have built across marketplaces,
-            service platforms, and interactive web experiences. Each project is
-            shaped by a mix of product thinking, frontend polish, and reliable
-            backend delivery.
+            A curated collection of product-led engineering work. Each case study
+            highlights the problem, architecture decisions, measurable impact,
+            and technology tradeoffs behind the solution.
           </p>
         </div>
 
@@ -108,18 +161,18 @@ const Portfolio = () => {
           </div>
           <div className="rounded-2xl border border-green-500/30 bg-gray-900/65 p-4 backdrop-blur-sm">
             <p className="text-sm uppercase tracking-[0.2em] text-green-400">
-              Focus
+              Approach
             </p>
             <p className="mt-2 text-base font-semibold text-white">
-              Full-stack products with strong UX execution
+              Practical engineering for startup-grade product outcomes
             </p>
           </div>
           <div className="rounded-2xl border border-green-500/30 bg-gray-900/65 p-4 backdrop-blur-sm">
             <p className="text-sm uppercase tracking-[0.2em] text-green-400">
-              Strength
+              Outcome
             </p>
             <p className="mt-2 text-base font-semibold text-white">
-              Shipping responsive, production-ready experiences
+              Launch-ready experiences that move business metrics
             </p>
           </div>
         </div>
@@ -171,6 +224,44 @@ const Portfolio = () => {
                 <p className="mt-4 text-base leading-relaxed text-gray-200">
                   {project.summary}
                 </p>
+
+                <div className="mt-5 grid gap-4 sm:grid-cols-2">
+                  <div className="rounded-xl border border-white/10 bg-black/20 p-4">
+                    <p className="text-xs font-semibold uppercase tracking-[0.2em] text-green-400">
+                      Problem
+                    </p>
+                    <p className="mt-2 text-sm leading-relaxed text-gray-200">
+                      {project.problem}
+                    </p>
+                  </div>
+                  <div className="rounded-xl border border-white/10 bg-black/20 p-4">
+                    <p className="text-xs font-semibold uppercase tracking-[0.2em] text-green-400">
+                      Architecture
+                    </p>
+                    <p className="mt-2 text-sm leading-relaxed text-gray-200">
+                      {project.architecture}
+                    </p>
+                  </div>
+                </div>
+
+                <div className="mt-5 grid gap-4 sm:grid-cols-2">
+                  <div className="rounded-xl border border-white/10 bg-black/20 p-4">
+                    <p className="text-xs font-semibold uppercase tracking-[0.2em] text-green-400">
+                      Challenges
+                    </p>
+                    <p className="mt-2 text-sm leading-relaxed text-gray-200">
+                      {project.challenges}
+                    </p>
+                  </div>
+                  <div className="rounded-xl border border-white/10 bg-black/20 p-4">
+                    <p className="text-xs font-semibold uppercase tracking-[0.2em] text-green-400">
+                      Why this tech
+                    </p>
+                    <p className="mt-2 text-sm leading-relaxed text-gray-200">
+                      {project.techRationale}
+                    </p>
+                  </div>
+                </div>
 
                 <div className="mt-5 grid gap-4 sm:grid-cols-2">
                   <div className="rounded-xl border border-white/10 bg-black/20 p-4">
