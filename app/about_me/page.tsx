@@ -124,7 +124,7 @@ const About = () => {
             </ul>
 
             <a
-              href="/resume/Tunde_Olumoh_Resume_FE.pdf"
+              href="/resume/Tunde_Olumoh_FS.pdf"
               download="Tunde_Olumoh.pdf"
               target="_blank"
               rel="noopener noreferrer"
